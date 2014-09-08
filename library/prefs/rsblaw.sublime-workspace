@@ -1,0 +1,2360 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ca",
+				"capitalize"
+			],
+			[
+				"text-",
+				"text-decoration"
+			],
+			[
+				"the_c",
+				"the_content"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"limi",
+				"post_limits"
+			],
+			[
+				"get_the_a",
+				"get_the_author_meta"
+			],
+			[
+				"get_the_author",
+				"get_the_author_meta"
+			],
+			[
+				"els",
+				"else 	Language Construct"
+			],
+			[
+				"get_the_auth",
+				"get_the_author_meta"
+			],
+			[
+				"the_th",
+				"the_post_thumbnail"
+			],
+			[
+				"get_template",
+				"get_template_part"
+			],
+			[
+				"print",
+				"printf"
+			],
+			[
+				"get_temp",
+				"get_template_part"
+			],
+			[
+				"the_pos",
+				"the_post_thumbnail"
+			],
+			[
+				"first-",
+				"first-child"
+			],
+			[
+				"wp-",
+				"wp-lp	WP-loop"
+			],
+			[
+				"WP_DEBUG_D",
+				"WP_DEBUG_DISPLAY"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "%%content%%\n<div class=\"css-box first %%width%%\">\n	<div class=\"icon-uniE60d\"></div>\n	<h3>Railroad Injuries</h3>\n	Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.\n	<a title=\"Railroad Injuries\" href=\"/firm-overview/areas/railroad/\"><div class=\"button2\" style=\"align: center;\">Railroad Injuries</div></a>\n</div>\n<div class=\"%%width%% css-box\">\n	<div class=\"icon-uniE609\"></div>\n	<h3>Auto Injuries</h3>\n	Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.\n	<a title=\"Auto Injuries\" href=\"/firm-overview/areas/auto-accidents/\"><div class=\"button2\" style=\"align: center;\">Auto Injuries</a></div>\n</div>\n<div class=\"%%width%% css-box last\">\n	<div class=\"icon-uniE60a\"></div>\n	<h3>Work Injuries and Discrimination</h3>\n	Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.\n	<a title=\"Employment Injuries and Discrimination\" href=\"/firm-overview/areas/employment-injuries/\"><div class=\"button2\" style=\"align: center;\">Work Injuries and Discrimination</div></a>\n</div>\n\n<div class=\"%%width%% css-box first\" style=\"clear: both;\">\n	<div class=\"icon-uniE608\"></div>\n	<h3>Advising Businesses</h3>\n	Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.\n	<a title=\"Advising Businesses\" href=\"/firm-overview/areas/business/\"><div class=\"button2\" style=\"align: center;\">Advising Businesses</div></a>\n</div>\n<div class=\"%%width%% css-box\">\n	<div class=\"icon-uniE60c\"></div>\n	<h3>Federal Employment Law</h3>\n	Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.\n	<a title=\"Federal and Employment Law\" href=\"/firm-overview/areas/employment-law/\"><div class=\"button2\" style=\"align: center;\">Federal Employment Law</div></a>\n</div>\n<div class=\"%%width%% css-box last\">\n	<div class=\"icon-uniE60b\"></div>\n	<h3>Real Estate Law</h3>\n	Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.\n	<a title=\"Real Estate Law\" href=\"/firm-overview/areas/real-estate-law/\"><div class=\"button2\" style=\"align: center;\">Real Estate Law</div></a>\n</div>",
+			"settings":
+			{
+				"buffer_size": 2297,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "/******************************************************************\nSite Name: Rose, Senders & Bovarnick\nAuthor: Ben Beekman and Ted Marshall, 33 Degrees Design Studio\n\nStylesheet: Base Mobile Stylesheet\n\nDon't over-style here--everything in this file will be loaded by mobile devices.\n\n------------ MAP ------------\n\n01. GENERAL STYLES\n02. WORDPRESS BODY CLASSES\n03. LAYOUT & GRID STYLES\n04. LINK STYLES\n05. H1, H2, H3, H4, H5 STYLES\n\n\n06. HEADER STYLES\n07. NAVIGATION STYLES\n08. POSTS & CONTENT STYLES\n09. PAGE NAVI STYLES\n10. COMMENT STYLES\n11. COMMENT FORM STYLES\n12. SIDEBARS & ASIDES\n13. FOOTER STYLES\n\n******************************************************************/\n\n\n//FIXING FONT SIZES FOR SPECIFIC ELEMENTS STARTS HERE\n.entry-meta {\n	font-size: 1rem;\n	span {padding: 0 0.5rem 0 0;} //spacing between meta links\n} //.entry-meta\n\n#main ul > li {font-size:1rem;}\n//FIXING FONT SIZES FOR SPECIFIC ELEMENTS ENDS HERE\n\nmark {\n	background-color: transparent;\n	font-weight: 700;\n}\nh2.section-title { //add left margins for section titles outside the article tag\n	padding-left: 2rem;\n}\n\n#main>header.article-header {padding-left: 2rem;}\n\n\n\n/******************************************\nICON FONT FROM ICOMOON STARTS HERE\n*******************************************/\n@font-face {\n	font-family: 'law';\n	src:url('fonts/law.eot?juxy6v');\n	src:url('fonts/law.eot?#iefixjuxy6v') format('embedded-opentype'),\n	url('fonts/law.woff?juxy6v') format('woff'),\n	url('fonts/law.ttf?juxy6v') format('truetype'),\n	url('fonts/law.svg?juxy6v#law') format('svg');\n	font-weight: normal;\n	font-style: normal;\n}\n\n[class^=\"icon-\"], [class*=\" icon-\"] {\n	font-family: 'law';\n	font-size: 4em;\n	font-style: normal;\n	font-variant: normal;\n	font-weight: normal;\n	line-height: 1;\n	padding-right: 0.15em;\n	text-transform: none;\n\n	/* Better Font Rendering =========== */\n	-webkit-font-smoothing: antialiased;\n	-moz-osx-font-smoothing: grayscale;\n}\n\n.icon-uniE606:before {\n	content: \"\\e606\";\n}\n.icon-uniE605:before {\n	content: \"\\e605\";\n}\n.icon-uniE604:before {\n	content: \"\\e604\";\n}\n.icon-uniE603:before {\n	content: \"\\e603\";\n}\n.icon-uniE602:before {\n	content: \"\\e602\";\n}\n.icon-uniE601:before {\n	content: \"\\e601\";\n}\n.icon-uniE600:before {\n	content: \"\\e600\";\n}\n.icon-uniE607:before {\n	content: \"\\e607\";\n}\n.icon-uniE608:before {\n	content: \"\\e608\";\n}\n.icon-uniE609:before {\n	content: \"\\e609\";\n}\n.icon-uniE60a:before {\n	content: \"\\e60a\";\n}\n.icon-uniE60b:before {\n	content: \"\\e60b\";\n}\n.icon-uniE60c:before {\n	content: \"\\e60c\";\n}\n.icon-uniE60d:before {\n	content: \"\\e60d\";\n}\n\n//additional icon customizations:\n.sidebar [class^=\"icon-\"], .sidebar [class*=\" icon-\"] {\n	font-color: @grey; //tint of icons\n}\n/******************************************\nICON FONT FROM ICOMOON ENDS HERE\n*******************************************/\n\n// Call to action on home page starts here\n.cta-textbox { //at smaller sizes the textbox breaks below the image, so the text can be bigger\n	// clear:both;\n	position: static;\n	max-width: 100%;\n	border-width: 12px solid @white;\n	background-color: @paleyellow;\n	padding: 0.25rem 1rem;\n	border: 0.5rem solid @white;\n	h1{\n		color: @darkbrown;\n		font-size: 2.25rem;\n		line-height: 1.1em;\n		margin: 0.4em 0 0 0;\n	} //end h1\n	p{\n		font-size: 1rem;\n	} //end p\n} //end .cta-textbox\n\n.slogan { //the Emergency phone number in the top right on desktop-- hide it for mobile\n	display: none;\n	visibility: hidden;\n}\n\n.cta-container { //homepage image is overlapped by the header gradient and logo, appears directly below gradient\n	margin: 0;\n	padding: 0;\n	z-index: -1;\n	position: relative;\n	line-height: 1;\n}\n\n.cta-image {\n	width: 100%;\n	margin:0;\n	padding:0;\n	position: static;\n}\n\n.home-link { //position logo/home link above all other layers\n	display: inline-block;\n	position: relative;\n	left: 15px;\n	top: 27px;\n	z-index: 999;\n}\n.home-link>img {\n	width: 100%;\n	max-width: 341px;\n	height: auto;\n	height:auto;\n}\n\n#main { //position in front of the custom background but behind the logo\n	position: relative;\n	z-index: 5;\n}\n\nimg {max-width: 100%;\n	height: auto;\n	padding: 0 1rem 0 0;\n}\narticle {\n	ul{list-style-type:disc;}\n	ol{list-style-type:decimal;}\n	list-style-position:inside;\n}\n\n//Quick Facts sidebar list ACF formatting\n#quick-facts ul {\nfont-size: 1rem;\nlist-style-type: disc;\nlist-style-position: inside;\nmargin-left: 1.8rem;\nmargin-top: 0;\nfont-size: 1.15rem;\nline-height: 1.3;\nlist-style-position: outside;\nlist-style-type: disc;\n}\n//, #text-6 > div:nth-child(2)\n\n\n// FIRST P OF PRACTICE AREAS PAGE TEMPLATE IN ALL CAPS\n.page-template-page-practice_areas-php {\n	.entry-content p:first-child {\n		// text-transform: uppercase;  //latest PSD is no longer uppercase\n		line-height: 2;\n	}\n}\n\n.widget ul {\n	li {\n		font-size: 1.4rem;\n		a{}\n	}\n}\n\n\n//testimonials in sidebar need big margin for quotation mark :before\n.bne-testimonial-slider.flexslider {\n	padding-top: 20px;\n	.tanbox\n}\n\n.tan_box {\n	.tanbox\n}\n\nsection {\n	font-size: 0.875rem; //14px body content\n}\n\n\n\nimg.attachment-cta-bg.wp-post-image {\n	// margin-top: -20px;\n	width: 100%;\n}\n// Call to action ends here\n\n.social-links {font-size: 1rem;}\n\n// BODY TEXT\np {\n	color: #222;\n	font: 1.2rem @sans;\n	.first { font-weight: bold; }\n}\n\n// SEPARATOR/DIVIDER RULES (HR etc.)\nhr {border:5px solid @darkwhite; }\n.divider { display: inline; border-left: 5px solid @darkwhite; padding-left: 0.3rem;\n	&.first{border-left: none; padding-left: 0;}\n}\n\n.vr,.vr-l {\n	border-left: 1px solid @black;\n	padding-left: 1rem;\n}\n.vr-r {\n	border-right: 1px solid @black;\n	padding-right: 1rem;\n}\n.dividedhalf {\n	position:absolute;\n	left:50%;\n	top:10%;\n	bottom:10%;\n	border-left:5px @darkwhite;\n}\n\n.thumbs {\n	a:link, a:visited {\n		color: white;\n		text-shadow: 0 1px 0 @black;\n		text-outline: 1px @black;\n	}\n	a:active, a:hover, a.active {\n		color: @darkred;\n	}\n}\n\n#menu-bones-head ul, #menu-bones-head ol{\n	margin: 0;\n}\n\ndiv.post div.entry-utility {\n	display: none;\n	visibility: hidden;\n}\n\nivycat-post {padding:0em 1em;}\n\n.pis-thumbnail-img {text-align:center; display: block; position: relative; margin-right: 10px;}\n\n.pis-thumbnail-link::after {clear:both;}\n\n // margin for sidebar page and post content\n #content .wrap .eightcol .page,  #content .wrap .eightcol .post {\n 	margin: 0 0 0 0;\n 	padding: 0 0 0 2rem;\n }\n\n\n\n\n\n\n\n\n\n\n\n/*********************\n01. GENERAL STYLES\n*********************/\n\nhtml, body {\n	/* height: 100%; */\n}\nbody {\n	font-family: @sans;\n	font-size: 62.5%;\n	line-height: 2;\n	color: #565656;\n}\n\n\n\n\n\n\n\n\n\n\n\n/*************************\n02. WORDPRESS BODY CLASSES\nspecific page styles using body class as top selector\n********************/\n\n\n\n/* BEGIN HOMEPAGE-SPECIFIC STYLES\n________________________________________________________________________*/\n.home { //hide homepage \"Home\" title\n	h1.entry-title {\n		display: none;\n		visibility: hidden;\n	}\n	.page-title { //don't display \"Home\" heading on the home page\n		visibility: hidden;\n		display:none;\n	}\n	h2.page-title-alt{ //the \"practice areas\" headline on home\n		font-size: 2.2rem;\n		font-weight: 700;\n		margin: 1em 12.5% 0 12.5%;\n		border-bottom: 2px solid @tan;\n		width: 75%;\n		text-align:center;\n		a {\n			color: @black;\n		}\n	}//h2\n	#content #inner-content{\n		margin-top: 0px;\n	}\n} //END HOMEPAGE-SPECIFIC STYLES\n\n\n\n\n\n.blog {}                          /* blog template page */\n.archive {}                       /* archive page */\n.date {}                          /* date archive page */\n.date-paged-1 {}                /* replace the number to the corresponding page number */\n.search {}                        /* search page */\n.search-results {}              /* search result page */\n.search-no-results {}           /* no results search page */\n.search-paged-1 {}              /* individual paged search (i.e. body.search-paged-3) */\n.error404 {}                      /* 404 page */\n.single {}                        /* single post page */\n.postid-1 {}                    /* individual post page by id (i.e. body.postid-73) */\n.single-paged-1 {}              /* individual paged single (i.e. body.single-paged-3) */\n.attachment {}                    /* attatchment page */\n.attachmentid-1 {}              /* individual attatchment page (i.e. body.attachmentid-763) */\n.attachment-mime-type {}        /* style mime type pages */\n.author {}                        /* author page */\n.author-nicename {}             /* user nicename (i.e. body.author-samueladams) */\n.author-paged-1 {}              /* paged author archives (i.e. body.author-paged-4) for page 4 */\n.category {}                      /* category page */\n.category-1 {}                  /* individual category page (i.e. body.category-6) */\n.category-paged-1 {}            /* replace the number to the corresponding page number */\n.tag {}                           /* tag page */\n.tag-slug {}                    /* individual tag page (i.e. body.tag-news) */\n.tag-paged-1 {}                 /* replace the number to the corresponding page number */\n.page-template {\n	article section p:first-line {text-decoration: all-caps;}\n	p:first {\n		font-face: @sans;\n		font-size: 2rem;\n		line-height: 1.8;\n	}\n	}                 /* custom page template page */\n	.page-template-page-php {}      /* individual page template (i.e. body.page-template-contact-php */\n	                                                             .page-paged-1 {}                /* replace the number to the corresponding page number */\n	                                                             .page-parent {}                 /* parent page template */\n	                                                             .page-child {}                  /* child page template */\n	                                                             .parent-pageid-1 {}             /* replace the number to the corresponding page number */\n	                                                             .logged-in {}                     /* if user is logged in */\n	                                                             .paged {}                         /* paged items like search results or archives */\n	                                                             .paged-1 {}                     /* individual paged (i.e. body.paged-3) */\n\n/*********************\n03. LAYOUT & GRID STYLES\n*********************/\n\n.wrap {\n	margin: 0 auto;\n	max-width: 1280px;\n}\n#container {width: 100%;\n	max-width: 1280px;}\n/*********************\n04. LINK STYLES\n*********************/\n\na, a:visited {\n	color: @link-color;\n	text-decoration: none;\n\n	/* on hover */\n	&:hover, &:focus {\n		color: @link-hover;\n	}\n\n	/* on click */\n	&:active { color: @darkred;\n		border: 2px @nav-hover;\n		border-radius: 10px;\n	}\n\n	/* mobile tap color */\n	&:link {\n		/*\n		this highlights links on iPhones/iPads.\n		so it basically works like the :hover selector\n		for mobile devices.\n		*/\n		-webkit-tap-highlight-color : rgba( 0, 0, 0, 0.3 );\n	}\n}\n\n/******************************************************************\n05. H1, H2, H3, H4, H5 STYLES\n******************************************************************/\n\nh1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {\n	font-family: \"EB Garamond\", \"Garamond\", @serif;\n	text-rendering: optimizelegibility;\n	font-weight: 400;\n	/*\n	if you're going to use webfonts, be sure to check your weights\n	http://css-tricks.com/watch-your-font-weight/\n	*/\n\n	/* removing text decoration from all headline links */\n	a {\n		text-decoration: none;\n	}\n}\n\nh1, .h1 {\n	line-height: 1.333em;\n	color: @darkbrown;\n	font-size: 2.25rem; //36px Garamond\n	font-weight: 700;\n}\n\nh2, .h2 { //page/single post titles\n	line-height: 1.333em;\n	color: @darkbrown;\n	font-size: 2.25rem; //36px Garamond\n	font-weight: 400;\n	margin: 0.63em 0 0 0;\n}\n\nh3, .h3 { //uppercase subhead font\n	font-weight: 700;\n	font-size: 1.16667rem;\n	line-height: 1.1em;\n	color: @darkbrown;\n	text-transform: uppercase;\n	margin: 0.5rem 0 0.25rem 0;\n}\n\nh4, .h4 {\n	font-size: 1.1rem;\n	font-weight: 700;\n	margin: 0;\n}\n\nh5, .h5 {\n	font-size: 0.846rem;\n	line-height: 2.09rem;\n	text-transform: uppercase;\n	letter-spacing: 2px;\n}\n\np.excerpt {\n	font-size: 1.16667rem; //20px\n	line-height: 1.8; //36px\n}\n\n\n\n\n\n\n\n/*********************\n06. HEADER STYLES\n*********************/\n\n.header {\n		background-image: linear-gradient(to bottom, rgba(170,170,170,1) 0%,rgba(23,11,8,1) 1%,rgba(25,11,10,1) 17%,rgba(46,22,18,1) 35%,rgba(64,30,25,1) 65%,rgba(65,30,25,1) 100%); //two background images: gradient beneath logo\n		background-position: left top;\n		background-repeat: no-repeat;\n		background-size: 100% 151px; //size of header determines size of gradient background--\n											//logo is taller so that it overlaps the content area\n		background-attachment: scroll;\n		position: relative;\n		z-index: 10;\n		ul {margin-bottom:0;}\n		.entry-meta {font-size: 1rem;}\n} //end header\n\n/*********************\n07. NAVIGATION STYLES\n*********************/\n\n/*\nall navs have a .nav class applied via\nthe wp_menu function; this is so we can\neasily write one group of styles for\nthe navs on the site so our css is cleaner\nand more scalable.\n*/\n\n.nav {\n	font-size: 1rem;\n	li {\n		a {\n			display: inline-block;\n			text-decoration: none;\n			/*\n			remember this is for mobile ONLY, so hover styles are in 481up.less.\n			*/\n\n			&:hover, &:focus {} //end hover/focus\n		} //end a\n\n		&:first-child {}\n\n		&:last-child {}\n	}\n}//.nav\n\n\n\n\n\n\n/*********************\n08. POSTS & CONTENT STYLES\n*********************/\n#content {\n	#inner-content { margin-top: 0;\n		.css-box {\n			padding: 0.5rem 1.5rem;\n			border: 5px solid @white;\n			margin-bottom: 2rem;\n			-webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.27);\n			-moz-box-shadow:    0px 1px 2px 0px rgba(0, 0, 0, 0.27);\n			box-shadow:         0px 1px 2px 0px rgba(0, 0, 0, 0.27);\n			font-size: 1rem;\n\n			[class^=\"icon-\"], [class*=\" icon-\"] {\n				font-size: 6rem; //icon size inside css-boxes\n				text-align: center;\n				color: @darkred;\n			}\n\n			h3 {\n				text-transform: uppercase;\n				text-align: center;\n			}\n\n			.css-gradient (@white, @offwhite);\n\n			.button {\n				&:extend(.button-secondary);\n				text-align:center;\n				width: 100%;\n				-webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);\n				-moz-box-shadow:    0px 0px 0px 0px rgba(0, 0, 0, 0);\n				box-shadow:         0px 0px 0px 0px rgba(0, 0, 0, 0);\n				&:hover, &:link, &:active {\n					background-color: @black;\n					background-image: none;\n				}\n			}\n		}\n	}\n}\n#content article{padding: 0; margin: 30px 1rem 0 2rem;} //push the content below the logo on non-overlapping pages\n\n.home #content article{margin-top: 0;} // logo overlaps content on these pages\n\n.hentry {\n\n	header {}\n\n	footer {}\n\n	} /* end .hentry */\n\n	.single-title,\n	.page-title {}\n\n	.single-title {}\n\n	.page-title {}\n\n	.archive-title { }\n\n	/* want to style individual post classes? Booya! */\n	.post-id {}         /* post by id (i.e. post-3) */\n	.post {}            /* general post style */\n	.page {}            /* general article on a page style */\n	.attachment {}      /* general style on an attatchment */\n	.sticky {}          /* sticky post style */\n	.hentry {}          /* hentry class */\n	.category-slug {}   /* style by category (i.e. category-videos) */\n	.tag-slug {}        /* style by tag (i.e. tag-news) */\n\n	/* post meta */\n	.byline {\n		color: #999;\n\n		time {}\n	}\n\n	/* entry content */\n	.entry-content {\n\n		p {}\n\n\n		ul, ol, table, dl {}\n\n		ul, ol {\n\n			li {}\n\n		}\n\n		ul {\n\n			li {}\n\n		}\n\n		ol {\n\n			li {}\n\n		}\n\n		blockquote {\n			margin: .5rem 0;\n			background: tan;\n			border: 5px white solid;\n			padding: 0 1rem;\n			box-shadow: 5px 3px 5px 0px #000;\n			&:before {}\n\n		}\n\n		dl {}\n\n		dt {}\n\n		dd {\n			margin-left: 0;\n			font-size: 0.9em;\n			color: #787878;\n			margin-bottom: 1.5em;\n		}\n\n		img {\n			margin: 0 0 1.5em 0;\n			max-width: 100%;\n			height: auto;\n		}\n\n/*\nimage alignment on a screen this size may be\na bit difficult. It's set to start aligning\nand floating images at the next breakpoint,\nbut it's up to you. Feel free to change it up.\n*/\n.alignleft, img.alignleft {}\n.alignright, img.alignright {}\n.aligncenter, img.aligncenter {}\n\nvideo, object {\n	max-width: 100%;\n	height: auto;\n}\n\npre {\n	background: #eee;\n	border: 1px solid #cecece;\n	padding: 10px;\n}\n\n} /* end .entry-content */\n\n.wp-caption {\n	max-width: 100%;\n	background: #eee;\n	padding: 5px;\n\n	/* images inside wp-caption */\n	img {\n		max-width: 100%;\n		margin-bottom: 0;\n		width: 100%;\n	}\n\n	p.wp-caption-text {\n		font-size: 0.85em;\n		margin: 4px 0 7px;\n		text-align: center;\n	}\n\n	} /* end .wp-caption */\n\n	/* image gallery styles */\n	.gallery {\n		dl {\n			a {}\n			img {}\n		}\n		dt {}\n		dd {}\n		} /* end .gallery */\n\n		/* gallery caption styles */\n		.gallery-caption {}\n\n		.size-full {}\n		.size-large {}\n		.size-medium {}\n		.size-thumbnail {}\n\n/******************************************************************\n09. PAGE NAVI STYLES\n******************************************************************/\n\n.page-navigation,\n.wp-prev-next {\n	font-size: 1.4rem;\n	margin: 1.1rem 0 1.2rem 2rem;\n}\n.rsb_page_navi {\n\n	li {\n		float: left;\n		margin-left: 10px;\n\n		a {\n			padding: 3px 6px;\n			display: block;\n			text-decoration: none;\n			position: relative;\n\n			&:hover,\n			&:focus {\n				color: #f01d4f;\n				text-decoration: underline;\n			}\n		}\n\n	}\n\n	/* current page link */\n	li.bpn-current {\n		padding: 3px 6px;\n		border-bottom: 2px solid #f01d4f;\n		position: relative;\n		border: 2px @nav-hover;\n		border-radius: 10px;\n\n		a {\n			/* hovering on current page link */\n			&:hover,\n			&:focus {}\n\n		}\n\n		} /* end .rsb_page_navi .bpn-current */\n\n		/* common styles for page-navi links */\n		li.bpn-prev-link,\n		li.bpn-next-link {\n			font-weight: 700;\n\n			a {\n				padding: 0;\n			}\n		}\n\n		/* remove the bg on end links */\n		li.bpn-prev-link a:hover,\n		li.bpn-next-link a:hover,\n		li.bpn-first-page-link a:hover,\n		li.bpn-last-page-link a:hover {\n			background: none;\n		}\n\n		/* previous link */\n		li.bpn-prev-link {\n			a {\n				&:hover,\n				&:focus {}\n			}\n		}\n\n		/* next page link */\n		li.bpn-next-link {\n			a {\n				&:hover,\n				&:focus {}\n			}\n		}\n\n		/* first page link */\n		li.bpn-first-page-link {\n			a {\n				&:hover,\n				&:focus {}\n			}\n		}\n\n		/* last page link */\n		li.bpn-last-page-link {\n			a {\n				&:hover,\n				&:focus {}\n			}\n		}\n\n		/* fallback previous & next links */\n		.wp-prev-next {\n\n			ul {}\n\n			.prev-link {\n				float: left;\n			}\n\n			.next-link {\n				float: right;\n			}\n\n			} /* end .wp-prev-next */\n}//end bones page navi\n\n/******************************************************************\n10. COMMENT STYLES\n******************************************************************/\n\n/* h3 comment title */\n#comments {\n\n	/* number of comments span */\n	span {}\n\n}\n\n.comment-nav {\n\n	ul {\n\n		li {}\n\n	}\n}\n\n\n.commentlist {\n\n	li {\n		position: relative;\n		clear: both;\n		overflow: hidden;\n		list-style-type: none;\n		margin-bottom: 1.5em;\n		padding: 0.7335em 10px;\n\n		&:last-child { margin-bottom: 0; }\n\n		ul.children {\n			margin: 0;\n\n			li {}\n\n			/* variations */\n			.comment {}\n			.alt {}\n			.odd {}\n			.even {}\n			.depth-1 {}           /* change number for different depth */\n			.byuser {}\n			.bypostauthor {}\n			.comment-author-admin {}\n\n			} /* end .commentlist li ul.children */\n		}\n\n\n		li[class*=depth-] {\n			margin-top: 1.1em;\n		}\n\n		li.depth-1 {\n			margin-left: 0;\n			margin-top: 0;\n		}\n\n		li:not(.depth-1) {\n			margin-right: -10px;\n			margin-left: -10px;\n			margin-top: 0;\n			padding-bottom: 0;\n		}\n\n		li.depth-2 {}\n		li.depth-3 {}\n		li.depth-4 {}\n		li.depth-5 {}\n\n		/* general comment classes */\n		.alt {}\n		.odd {\n			background: #eee;\n		}\n		.even {\n			background: #fefefe;\n		}\n		.parent {}\n		.comment {}\n		.children {}\n		.pingback {}\n		.bypostauthor {}\n		.comment-author {}\n		.comment-author-admin {}\n		.thread-alt {}\n		.thread-odd {}\n		.thread-even {}\n\n		/* vcard */\n		.vcard {\n			margin-left: 50px;\n\n			cite.fn {\n				font-weight: 700;\n				font-style: normal;\n\n				a.url {}\n\n			}\n\n			time {\n				float: right;\n\n				a {\n					color: #999;\n					text-decoration: none;\n\n					&:hover {\n						text-decoration: underline;\n					}\n\n				}\n\n			}\n\n			img.photo {}\n\n			img.avatar {\n				position: absolute;\n				left: 10px;\n				padding: 2px;\n				border: 1px solid #cecece;\n				background: #fff;\n			}\n\n			} /* end .commentlist .vcard */\n\n\n			/* comment meta */\n			.comment-meta {\n\n				a {}\n\n			}\n\n			.commentmetadata {\n\n				a {}\n\n			}\n\n			/* comment content */\n			.comment_content {\n				margin-left: 50px;\n\n				p {\n					margin: 0.7335em 0 1.5em;\n					font-size: 1em;\n					line-height: 1.5em;\n				}\n\n				} /* end .commentlist .comment_content */\n\n				/* comment reply link */\n				.comment-reply-link {\n					text-decoration: none;\n					float: right;\n					background: #4598bb;\n					padding: 3px 5px;\n					color: #fff;\n					opacity: 0.65;\n					margin-bottom: 10px;\n					font-weight: 700;\n					font-size: 0.9em;\n\n					&:hover,\n					&:focus { opacity: 1; }\n\n					} /* end .commentlist .comment-reply-link */\n\n					} /* end .commentlist */\n\n/******************************************************************\n11. COMMENT FORM STYLES\n******************************************************************/\n\n.respond-form {\n	margin: 1.5em 10px;\n	padding-bottom: 2.2em;\n\n	form {\n		margin: 0.75em 0;\n\n		li {\n			list-style-type: none;\n			clear: both;\n			margin-bottom: 0.7335em;\n\n			label,\n			small {\n				display: none;\n			}\n		}\n\n		input[type=text],\n		input[type=email],\n		input[type=url],\n		textarea {\n			padding: 3px 6px;\n			background: #efefef;\n			border: 2px solid #cecece;\n			line-height: 1.5em;\n\n			&:focus {\n				background: #fff;\n			}\n\n			/* form validation */\n			&:invalid {\n				outline: none;\n				border-color: #fbc2c4;\n				background-color: #f6e7eb;\n				-webkit-box-shadow: none;\n				-moz-box-shadow: none;\n				-ms-box-shadow: none;\n				box-shadow: none;\n			}\n		} //end textarea\n\n		input[type=text],\n		input[type=email],\n		input[type=url] {\n			max-width: 400px;\n			min-width: 250px;\n		}\n\n		textarea {\n			resize: none;\n			width: 97.3%;\n			height: 150px;\n		}\n	}\n} //end respond form\n\n/* comment submit button */\n#submit {}\n\n/* comment form title */\n#comment-form-title {\n	margin: 0 0 1.1em;\n}\n\n/* cancel comment reply link */\n#cancel-comment-reply {\n	a {}\n}\n\n/* logged in comments */\n.comments-logged-in-as {}\n\n/* allowed tags */\n#allowed_tags {\n	margin: 1.5em 10px 0.7335em 0;\n}\n/* no comments */\n.nocomments {\n	margin: 0 20px 1.1em;\n}\n\n/*********************\n12. SIDEBARS & ASIDES\n*********************/\n.bne_testimonial_slider_widget {\n	-webkit-box-shadow: 2px 2px 9px -1px #fff; /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */\n	box-shadow: 2px 2px 9px -1px #fff; /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */\n	border: 5px solid white;\n	font-family: @garamond;\n	.single-bne-testimonial{\n		background-color:@offwhite;\n	}\n	h4 {\n		display:none;\n		visibility: hidden;\n	}\n	p {\n		font-family: @garamond;\n		font-weight: bold;\n		font-style:italic;\n		font-size: 2.2rem;\n		line-height: 1.09090909091;\n		margin: 0 0 0 0;\n		padding: 0 0 0 0;\n		position:static;\n		visibility: visible;\n		display: inline-block;\n		color: @black;\n	}\n	.bne-testimonial-description p{\n		&:before {\n		 //quotation mark pullquote graphic starts here\n		color: @grey;\n		content: '\\201C';\n		float: left;\n			// font-size: 5rem; //quotation mark size\n			//\n			// line-height: 0.8;\n			// font-face: @garamond;\n			// font-weight: bold;\n			// font-style: normal;\n			// -moz-hyphens: none;\n			// hyphens: none;\n			// height: 45px;\n			// width: 50px;\n			// margin-top: -20px;\n			// padding-top: 45px;\n			// margin-bottom: -50px;\n		} //&:before\n	} //.bne-testimonial-description\n} //.bne_testimonial_slider_widget\n\n\n.sidebar {}\n.widgettitle {}\nh3{}\nul {\n	li {\n		&:first-child {}\n		&:last-child {}\n		a {}\n		/* deep nesting */\n		ul {}\n	}\n}\n\n/*********************\n13. FOOTER STYLES\n*********************/\nfooter.footer{ // footer (and footer nav) formatting\n	clear: both;\n	background-color: @darkred;\n	color: @white;\n\n	p {\n		color: @white;\n		font-size: 1rem;\n	}\n	.wrap \n	{\n	margin-top: 1.4rem;\n	>.first { //sidebar left widget area\n		margin: 0 0 0 2rem; //footer left margin\n		.textwidget {//Left column Footer widget\n			color: @white;\n			font-size: 1rem;\n			line-height: 1.3;\n			p {\n				font-size: .7em;\n			} //p\n		}//.textwidget\n			h3 {\n				font-size:0.8rem; //14pt\n				color: @white;\n				text-transform: none;\n			} // h3\n		a { //this only affects non-nav footer links\n			color: @link-color;\n			text-decoration: underline;\n		} // a\n	} // .first\n	nav {\n	margin: 0 0 0 0; //top 14px side 10px sides;\n	// #menu-footer-links-left{padding-left: 0.5rem;}\n	// #menu-footer-links-right{padding-right: 0.5rem;}\n		ul.footer-nav {\n			background-color: transparent;\n			color: @white;\n			line-height: 1.2;\n			font-size: 0.6rem; //12px\n			margin: 0;\n			>li {\n				line-height: 1.5rem;\n				>a {\n					margin: 0;\n					font-size: .8rem;\n							font-weight:400; // top-level footer links  are bold (lower levels are not)\n							text-transform: uppercase;\n							color: @white;\n							&:active, &:focus, &:hover {\n								color: @offwhite;\n							} // &:active, &:focus, &:hover\n						} //a\n						ul.sub-menu,\n						ul.children {\n							margin: 0;\n							color: @white;\n							li {\n\n								a {\n									&:link, &:visited {\n										color: @white;\n									}\n									&:active, &:focus, &:hover {\n										color: @offwhite;\n										} //active\n										&:before{\n											content: \"•\";\n											display: inline-block;\n											margin-right: 0.3rem;\n										}\n										} /* end a */\n										} /* end li */\n						} // ul.sub-menu\n					}//li\n				} // ul.footernav\n		} //nav\n	.footer-widgets-right {\n		margin: 0 0 0 0; //top 14px side 10px sides;\n	} //.footer-widgets-right\n	.copyright {\n		margin-top: 1rem;\n		font-size: 0.714286rem; // 10px/14px\n	}\n} //  footer.footer\n\np.source-org {\n	font-size: 10px;\n	color: @offwhite;\n	text-align: center;\n	margin: 2px;\n}\n\n.indent {\n	margin-left: 1rem;\n}\n\n.textwidget {\n	font-size: 0.88rem;\n	.wpcf-text{\n		width: 100%;\n	}\n}\n\n.hidden {display: none;\nvisibility: hidden;}\n\n\n//RSB FORM ELEMENTS\ninput.wpcf7-submit {\n    color: rgb(255, 255, 255);\n    background-color: rgb(198, 30, 2);\n    border-color: rgb(198, 30, 2);\n    padding: 0.18rem 0.25rem;\n    vertical-align: top;\n}\n\nfooter .wpcf7-email {\n	float: left;\n	max-width: 78%;\n}\n\n.textwidget .wpcf7-text {width: 100%;\n} //sidebar form formatting\n",
+			"file": "/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/library/less/_base.less",
+			"file_size": 26092,
+			"file_write_time": 130523031140000000,
+			"settings":
+			{
+				"buffer_size": 26104,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/index.php",
+			"settings":
+			{
+				"buffer_size": 1195,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/content.php",
+			"settings":
+			{
+				"buffer_size": 2833,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/footer.php",
+			"settings":
+			{
+				"buffer_size": 1533,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/library/less/_481up.less",
+			"settings":
+			{
+				"buffer_size": 3419,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/page-contact.php",
+			"settings":
+			{
+				"buffer_size": 669,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 375.0,
+		"selected_items":
+		[
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"Snippet: wp-",
+				"Snippet: wp-get-page-slug"
+			],
+			[
+				"Snippet: ",
+				"Snippet: wp-get-page-slug"
+			],
+			[
+				"Snippet: php",
+				"Snippet: PHP sub-header comment"
+			],
+			[
+				"Snippet: foreach",
+				"Snippet: <?php foreach (…) … <?php endforeach ?>"
+			],
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"js",
+				"JSLint"
+			],
+			[
+				"align",
+				"Preferences: Alignment Key Bindings – User"
+			],
+			[
+				"rei",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"gutt",
+				"SublimeLinter: Choose Gutter Theme"
+			],
+			[
+				"Snippet: wpl",
+				"Snippet: WP-loop"
+			],
+			[
+				"ind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"disab",
+				"Package Control: Disable Package"
+			],
+			[
+				"packag",
+				"Package Control: Disable Package"
+			],
+			[
+				"package",
+				"Package Control: Disable Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"REIN",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"RI",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"Snippet: wp",
+				"Snippet: WP-loop"
+			],
+			[
+				"Snippet: w",
+				"Snippet: WP-loop"
+			],
+			[
+				"ri",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"Snippet: rs",
+				"Snippet: rsbhead"
+			],
+			[
+				"Snippet: comm",
+				"Snippet: Comment Form Template"
+			],
+			[
+				"comm",
+				"DocBlockr: Decorate line comment"
+			],
+			[
+				"block com",
+				"DocBlockr: Reparse comment block"
+			],
+			[
+				"re",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"reindent lines",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"inden",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"inde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"reind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"install p",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Disable Package"
+			],
+			[
+				"install package",
+				"Package Control: Install Package"
+			],
+			[
+				"show",
+				"SublimeLinter: Show All Errors"
+			],
+			[
+				"comme",
+				"Toggle Block Comment"
+			],
+			[
+				"install pa",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: Enable Package"
+			]
+		],
+		"width": 588.0
+	},
+	"console":
+	{
+		"height": 188.0,
+		"history":
+		[
+			"pear install PHP_CodeSniffer",
+			"save project",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/library/less/_mixins.less",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/library/less/_768up.less",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/functions.php",
+		"/Users/djbeeker/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/library/bones.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/page-practice_areas.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/header.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/footer.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/library/less/_481up.less",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/library/less/_base.less",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/page-firm_overview.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/404.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/content-attorneys.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/page-who_we_are.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-config.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/front-page.php",
+		"/Users/djbeeker/Desktop/#",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/content-single.php",
+		"/Users/djbeeker/Library/Application Support/Sublime Text 3/Packages/User/wp-get-page-slug.sublime-snippet",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/page.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/content-page.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/page-results.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/sidebar-firm_overview.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/library/css/ie.css",
+		"/Users/djbeeker/Library/Application Support/Sublime Text 3/Packages/User/SyntaxMgr.sublime-settings",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/sidebar-archive.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/sidebar-contact.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/comments.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/sidebar.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/sidebar-who_we_are.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/sidebar-single.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/sidebar-results.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/sidebar-practice_areas.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/search.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/page-attorney_details.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/index.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/content.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/content-none.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/single-lawyers.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/single-published_articles.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/single.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/archive.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/author.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/page-blog.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/page-home.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/page-no_sidebars.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/page-staff.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/archive-lawyers.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/archive-rsb_result.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/taxonomy-rsb_result.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/taxonomy-custom_cat.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/content-published_articles.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/content-attorney-single.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/content-featured-post.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/library/results-custom_post_type.php",
+		"/Users/djbeeker/Library/Application Support/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/content-rsb_result.php",
+		"/Users/djbeeker/Library/Application Support/Sublime Text 3/Packages/User/Colorsublime.sublime-settings",
+		"/Users/djbeeker/Library/Application Support/Sublime Text 3/Packages/Colorsublime/Colorsublime.sublime-settings",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/library/less/style.less",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/library/js/scripts.js",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/content-aside.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/page-contact.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/library/admin.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/library/translation/translation.php",
+		"/Users/djbeeker/Library/Application Support/Sublime Text 3/Packages/ToDone/readme.todo",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/library/js/jquery.meanmenu.js",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/library/js/libs/modernizr.custom.min-ck.js",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/gallery-to-slideshow.css",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/library/css/style.css",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/README",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/taxonomy-rsb_results.php",
+		"/Users/djbeeker/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/customize-control-background-image.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/library/translation/nb_NO.mo",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/library/js/jquery.meanmenu.min.js",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/library/less/_1030up.less",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/library/js/scripts-ck.js",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/library/css/meanmenu.min.css",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/content/themes/rsblaw/library/less/_768up.less",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/content/plugins/post-duplicator/includes/scripts.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/content/themes/rsblaw/library/js/scripts.js",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/plugins/contact-form-7/admin/js/scripts.js",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-settings.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/content/plugins/contact-form-7/includes/js/scripts.js",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/content/plugins/contact-form-7/admin/js/scripts.js",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/plugins/post-duplicator/includes/scripts.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/content/themes/rsblaw/sidebar-contact.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/content/themes/rsblaw/library/less/_base.less",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/content/themes/rsblaw/library/bones.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/plugins/cms-tree-page-view/functions.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/header-front-page.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/plugins/shortcodes-pro/inc/class-shortcodespro-base.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-blog-header.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/plugins/contact-form-7/languages/contact-form-7-uk.mo",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/plugins/contact-form-7/languages/contact-form-7-ro_RO.mo",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/plugins/acf-repeater/acf-repeater.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-activate.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/plugins/page-excerpts/page-excerpts.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/plugins/query-monitor/Plugin.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/library/less/_grid.less",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/library/less/_1240up.less",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/content-home.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/plugins/query-monitor/collectors/hooks.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/plugins/advanced-custom-fields/core/fields/_base.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/plugins/breadcrumb-navxt/breadcrumb_navxt_admin.php",
+		"/Users/djbeeker/Desktop/attorney-single-removed.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-config copy.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/plugins/better-wp-security/history.txt",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/content/themes/rsblaw/library/less/_mixins.less",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/content/themes/rsblaw/page-attorney_details.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/content/themes/rsblaw/library/less/_481up.less",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/content/themes/rsblaw/header-front-page.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/content/themes/rsblaw/header.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/content/plugins/wordfence/lib/menu_blockedIPs.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-mail.php",
+		"/Users/djbeeker/Dropbox/Sites/Coda stuff/rsblaw.sublime-project",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/content/themes/rsblaw/content-attorney-single.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/content/plugins/better-wp-security/core/js/admin-global-settings.js",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/content/plugins/better-wp-security/modules/free/ssl/js/admin-ssl.js",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/content/plugins/better-wp-security/modules/free/strong-passwords/js/admin-strong-passwords.js",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/content/plugins/advanced-custom-fields/core/views/meta_box_options.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-includes/bookmark.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/content/themes/rsblaw/library/less/lawyers.sublime-project",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/content/themes/rsblaw/functions.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/content/themes/rsblaw/library/css/style.css",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/content/themes/rsblaw/archive-lawyers.php",
+		"/Users/djbeeker/Dropbox/Sites/rsbcwp/content/themes/rsblaw/archive-rsb_result.php"
+	],
+	"find":
+	{
+		"height": 37.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"<project>",
+			"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/library/less",
+			"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/",
+			"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/library/less",
+			"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/",
+			"/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/library/less",
+			"/Users/djbeeker/Dropbox/Sites/rsbcwp",
+			"",
+			"/Volumes/Flexo/Users/djbeeker/Dropbox/Sites/rsbcwp/content/themes/rsblaw",
+			"/Volumes/Flexo/Users/djbeeker/Dropbox/Sites/rsbcwp/content/themes/bones-rsbc/library/less,/Users/djbeeker/Dropbox/Sites/rsbcwp/content/",
+			"/Volumes/Flexo/Users/djbeeker/Dropbox/Sites/rsbcwp/content/themes/bones-rsbc/library/less,/Users/djbeeker/Dropbox/Sites/rsbcwp/content/themes/rsblaw",
+			"/Volumes/Flexo/Users/djbeeker/Dropbox/Sites/rsbcwp/content/themes/bones-rsbc/library/less,/Users/djbeeker/Dropbox/Sites/rsbcwp/content/themes/bones-rsbc/",
+			"/Volumes/Flexo/Users/djbeeker/Dropbox/Sites/rsbcwp/content/themes/bones-rsbc/library/less,/Users/djbeeker/Dropbox/Sites/rsbcwp/content/themes/bones-rsbc/library/less",
+			"/Volumes/Flexo/Users/djbeeker/Dropbox/Sites/rsbcwp/content/themes/bones-rsbc/library/less",
+			"/Volumes/Flexo/Users/djbeeker/Dropbox/Sites/rsbcwp/content/themes/bones-rsbc/",
+			"/Volumes/Flexo/Users/djbeeker/Dropbox/Sites/rsbcwp/content/themes/bones-rsbc/library/less",
+			"/Users/djbeeker/Sites/freshops/webapps/beta/content/",
+			"/Users/djbeeker/Sites/freshops/webapps/beta/content/themes/freshops/library/less",
+			"/Users/djbeeker/Sites/freshops/webapps/beta/content/themes/freshops",
+			"/Users/djbeeker/Sites/freshops/webapps/beta/content/themes/freshops/library",
+			"/Users/djbeeker/Sites/freshops/webapps/beta/content/themes/",
+			"/Users/djbeeker/Sites/freshops/webapps/beta/themes",
+			"/Users/djbeeker/Sites/freshops/webapps/beta/themes/",
+			"/Users/djbeeker/Sites/freshops/webapps/beta/",
+			"/Users/djbeeker/Sites/freshops/webapps/beta/content/themes/freshops/library/less/",
+			"/Users/djbeeker/Sites/freshops/webapps/beta/content/themes/freshops/",
+			"/Users/djbeeker/Sites/freshops/webapps/beta/content/themes/freshops/library/less",
+			"",
+			"/Users/djbeeker/Sites/freshops/webapps/beta/wp-content/themes/freshops/library/less",
+			"",
+			"/Users/djbeeker/Sites/freshops/webapps/beta/content/themes/freshops/library/less",
+			"/Users/djbeeker/Sites/freshops/webapps/beta/content/themes/freshops/library",
+			"/Users/djbeeker/Sites/freshops/webapps/beta/content/themes/freshops",
+			"/Users/djbeeker/Sites/freshops/webapps/beta/content/themes/freshops/library/less",
+			"/Users/djbeeker/Sites/freshops/webapps/beta/content/themes/freshops/library/less/_1030up.less,/Users/djbeeker/Sites/freshops/webapps/beta/content/themes/freshops/library/less/_1240up.less,/Users/djbeeker/Sites/freshops/webapps/beta/content/themes/freshops/library/less/_2x.less,/Users/djbeeker/Sites/freshops/webapps/beta/content/themes/freshops/library/less/_481up.less,/Users/djbeeker/Sites/freshops/webapps/beta/content/themes/freshops/library/less/_768up.less,/Users/djbeeker/Sites/freshops/webapps/beta/content/themes/freshops/library/less/_base.less,/Users/djbeeker/Sites/freshops/webapps/beta/content/themes/freshops/library/less/_grid.less,/Users/djbeeker/Sites/freshops/webapps/beta/content/themes/freshops/library/less/_mixins.less,/Users/djbeeker/Sites/freshops/webapps/beta/content/themes/freshops/library/less/_normalize.less,/Users/djbeeker/Sites/freshops/webapps/beta/content/themes/freshops/library/less/_print.less,/Users/djbeeker/Sites/freshops/webapps/beta/content/themes/freshops/library/less/ie.less,/Users/djbeeker/Sites/freshops/webapps/beta/content/themes/freshops/library/less/login.less,/Users/djbeeker/Sites/freshops/webapps/beta/content/themes/freshops/library/less/style.less",
+			"/Users/djbeeker/Sites/freshops/webapps/beta/content/themes/freshops/library/less",
+			"<open folders>,<open files>",
+			"<open folders>"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"h3",
+			"footer",
+			"input",
+			".textwidget",
+			"twocol",
+			"submit",
+			"email",
+			"h2",
+			"input",
+			"&:focus",
+			"a:focus",
+			".slogan",
+			"footer",
+			"sidebar",
+			"header",
+			"menu",
+			"a {",
+			"a{",
+			"header",
+			"sidebar1",
+			"border-radius",
+			"content-rsb",
+			") :",
+			"elseif",
+			"//endif;",
+			"//endforeach;",
+			"//endwhile;",
+			"endif;",
+			"endwhile; endif;",
+			"have_posts() ) :",
+			"endwhile; endif;",
+			":",
+			"footer",
+			"first-line",
+			"blockquote",
+			"blockquote\nblockq",
+			"blockq",
+			":",
+			"endif;",
+			"bonestheme",
+			":",
+			"¶•ª",
+			"else {",
+			"} else {",
+			"else {",
+			"else :",
+			":",
+			"stroke",
+			"h2",
+			".home",
+			"JT_Customize_Control_Background_Image",
+			"bones_get_the_author_posts_link",
+			"function bonestheme",
+			"bonestheme",
+			"2%",
+			".byline",
+			"text-trans",
+			"header",
+			"active",
+			"header",
+			"footer",
+			"h1",
+			".cta-",
+			"rsb_page_navi",
+			"<h2",
+			"#401F18",
+			"law",
+			".header",
+			"h1",
+			"#content",
+			".social-links",
+			".page-navigation",
+			".byline",
+			"left",
+			"header",
+			"scripts",
+			"0.8",
+			".cta-textbox",
+			".tanbox",
+			"nav",
+			"bones-js",
+			"enqueue",
+			"http://rsblaw.net/wp-content/themes/rsblaw/fonts/",
+			"http://rsblaw.net/wp-content/themes/bones-rsbc",
+			"http://rsblaw.net/content",
+			".article-header",
+			"bne_testimonial",
+			"align",
+			".aligncenter",
+			"cta-te",
+			"http://beeker.webfactional.com/rsbc",
+			"beeker.webfaction.com/rsbc",
+			"http://beeker.webfaction.com/rsbc",
+			"http://www.beeker.webfaction.com/rsbc",
+			"footer",
+			"33d_page_navi",
+			"bones_page_navi",
+			"get_template_part",
+			"z-index",
+			"the_post_thumbnail('",
+			"the_post_thumbnail('vertical-300');",
+			"margin-top",
+			".nav",
+			"vertical-300",
+			"portrait-thumb",
+			"portrait-600",
+			"portrait-wide",
+			"bones-thumb-300",
+			"z-index",
+			"#inner-content",
+			"margin-top",
+			"#inner",
+			"header",
+			"#content",
+			"background-color",
+			"background-color: @white",
+			"icon",
+			"background-color:@white",
+			"#inner-footer",
+			"add_theme_support",
+			"header",
+			"pt",
+			"enqueue_scripts_function",
+			">",
+			"add_theme_support",
+			"custom_theme_features",
+			"custom_theme",
+			"header"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"//endif",
+			"//endforeach",
+			"//endwhile",
+			"have_posts() ) {",
+			"} //endif;",
+			"rsblawtheme",
+			"} else {",
+			"¶•ª",
+			"} else {",
+			"else {",
+			"rsb_get_the_author_posts_link",
+			"@darkbrown",
+			"http://rsblaw.net/wp-content/themes/rsblaw/library/fonts/",
+			"http://rsblaw.net/wp-content/themes/rsblaw",
+			"http://rsblaw.net/wp-content",
+			"http://rsblaw.net",
+			"rsb_page_navi",
+			"33d_page_navi",
+			"include(locate_template('your-template-name.php'));",
+			"the_post_thumbnail('portrait-thumb');",
+			"portrait-thumb",
+			"landscape-thumb",
+			"landscape-med",
+			"landscape-wide",
+			"portrait-thumb",
+			"",
+			"	",
+			"$userID",
+			"user_id",
+			"",
+			"$author_id",
+			"sidebar1",
+			"sidebar2",
+			"	",
+			"",
+			"* @package WordPress\n* @subpackage RSBlaw.net\n* @since RSBlaw.net 1.0",
+			"'bonestheme'",
+			"<?php the_post_thumbnail('vertical-300'); ?>",
+			"$published_query",
+			"$legal_query",
+			"	",
+			".",
+			"{}",
+			">",
+			"						<?php }",
+			"</dt><dd>\n									",
+			"</dd></dl>",
+			"order",
+			"animOptions0",
+			"animOptions01",
+			"#order",
+			"#menu-order",
+			"@hops-orange",
+			"@semi-black",
+			"",
+			"check_ele_cookie",
+			"menu",
+			"tabs",
+			"rel_external",
+			"order",
+			"var ",
+			"#menu-main-nav",
+			"#menu-order",
+			"#menu-main-nav",
+			"orderUL",
+			"tabsOptions",
+			"killCookie",
+			"setCookie",
+			"$relExternal",
+			"speed03",
+			"speed02",
+			"speed01",
+			"$animOptions01",
+			"$AnimOptions01",
+			"cookieDomain",
+			"cookiePath",
+			"cookieMenu",
+			"checkEle",
+			"clickID",
+			"ignoreCookie",
+			"checkEleCookie",
+			"menuFire",
+			"menuEle",
+			"menuType",
+			"menuID",
+			"menuClicker",
+			"ignoreCookieRel",
+			"bones_theme",
+			"@black;",
+			"@black",
+			"@near-black",
+			"@hops-olive",
+			"@green-x-dark",
+			"@hops-green",
+			"Author: Ben Beekman",
+			"<th scope=\"col\">",
+			"",
+			"th>",
+			"td>",
+			"@hops-",
+			"@hops",
+			"rhizome",
+			"Rhizomes",
+			"Rhizome",
+			"Hop",
+			"hop",
+			"hops",
+			"Hop",
+			"hop",
+			"rhizome",
+			"Rhizome",
+			"Rhizomes",
+			"Hop",
+			"hop_variety",
+			"Hop Varieties",
+			"Author: Ben Beekman",
+			"Site Name: Freshops Theme",
+			"@freshops-blue",
+			"@freshops-orange"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": false,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2297,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								2297
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"WordCountShouldRun": true,
+							"bh_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"is_xml": false,
+							"sublime_auto_complete": true,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"syntax_mgr_loaded": true,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 48.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/library/less/_base.less",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 26104,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								24492,
+								24492
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"WordCountShouldRun": true,
+							"bh_regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close"
+							],
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"sublime_auto_complete": true,
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"syntax_mgr_loaded": true,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 24253.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1195,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								440,
+								453
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"WordCountShouldRun": false,
+							"bh_regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close"
+							],
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"is_xml": false,
+							"sublime_auto_complete": true,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"syntax_mgr_loaded": true,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/content.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2833,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1914,
+								1914
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"WordCountShouldRun": false,
+							"bh_regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close"
+							],
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"is_xml": false,
+							"sublime_auto_complete": true,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"syntax_mgr_loaded": true,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 580.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/footer.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1533,
+						"regions":
+						{
+							"TagLint":
+							{
+								"flags": 2356,
+								"icon": "dot",
+								"regions":
+								[
+									[
+										1369,
+										1372
+									]
+								],
+								"scope": "variable.parameter"
+							}
+						},
+						"selection":
+						[
+							[
+								609,
+								609
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"WordCountShouldRun": false,
+							"bh_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"is_xml": false,
+							"sublime_auto_complete": true,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"syntax_mgr_loaded": true,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/library/less/_481up.less",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3419,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2458,
+								2458
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"WordCountShouldRun": true,
+							"bh_regions":
+							[
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close"
+							],
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"sublime_auto_complete": true,
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"syntax_mgr_loaded": true,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 537.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/Users/djbeeker/Dropbox/Sites/rsbcwp/wp-content/themes/rsblaw/page-contact.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 669,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								645,
+								645
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"WordCountShouldRun": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close"
+							],
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"is_xml": false,
+							"sublime_auto_complete": true,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"syntax_mgr_loaded": true,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 91.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 126.0
+	},
+	"output.find_results":
+	{
+		"height": 185.0
+	},
+	"project": "rsblaw.sublime-project",
+	"replace":
+	{
+		"height": 66.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"footer",
+				"rsblaw/footer.php"
+			],
+			[
+				"mix",
+				"rsblaw/library/less/_mixins.less"
+			],
+			[
+				"768",
+				"rsblaw/library/less/_768up.less"
+			],
+			[
+				"4",
+				"rsblaw/library/less/_481up.less"
+			],
+			[
+				"base",
+				"rsblaw/library/less/_base.less"
+			],
+			[
+				"head",
+				"rsblaw/header.php"
+			],
+			[
+				"481",
+				"rsblaw/library/less/_481up.less"
+			],
+			[
+				"bone",
+				"rsblaw/library/bones.php"
+			],
+			[
+				"mixi",
+				"rsblaw/library/less/_mixins.less"
+			],
+			[
+				"76",
+				"rsblaw/library/less/_768up.less"
+			],
+			[
+				"base.less",
+				"rsblaw/library/less/_base.less"
+			],
+			[
+				"ba",
+				"rsblaw/library/less/_base.less"
+			],
+			[
+				"bas",
+				"rsblaw/library/less/_base.less"
+			],
+			[
+				"atto",
+				"rsblaw/page-attorney_details.php"
+			],
+			[
+				"7",
+				"rsblaw/library/less/_768up.less"
+			],
+			[
+				"bon",
+				"rsblaw/library/bones.php"
+			],
+			[
+				"base.",
+				"rsblaw/library/less/_base.less"
+			],
+			[
+				"custom_po",
+				"rsblaw/library/results-custom_post_type.php"
+			],
+			[
+				"content-a",
+				"rsblaw/content-attorney-single.php"
+			],
+			[
+				"scri",
+				"rsblaw/library/js/scripts.js"
+			],
+			[
+				"fun",
+				"rsblaw/functions.php"
+			],
+			[
+				"page-att",
+				"rsblaw/page-attorney_details.php"
+			],
+			[
+				"page-wh",
+				"rsblaw/page-who_we_are.php"
+			],
+			[
+				"func",
+				"rsblaw/functions.php"
+			],
+			[
+				"",
+				"wp-content/themes/rsblaw/library/less/_base.less"
+			],
+			[
+				"front",
+				"wp-content/themes/rsblaw/front-page.php"
+			],
+			[
+				"arch",
+				"wp-content/themes/rsblaw/archive.php"
+			],
+			[
+				"base.l",
+				"wp-content/themes/rsblaw/library/less/_base.less"
+			],
+			[
+				"hea",
+				"wp-content/themes/rsblaw/header.php"
+			],
+			[
+				"page-",
+				"content/themes/rsblaw/page-attorney_details.php"
+			],
+			[
+				"att",
+				"content-attorney-single.php"
+			],
+			[
+				"attorn",
+				"content-attorney-single.php"
+			],
+			[
+				"functions",
+				"functions.php"
+			],
+			[
+				"mixin",
+				"library/less/_mixins.less"
+			],
+			[
+				"foot",
+				"footer.php"
+			],
+			[
+				"mi",
+				"library/less/_mixins.less"
+			],
+			[
+				"heade",
+				"header.php"
+			],
+			[
+				"basi",
+				"sidebar-single.php"
+			],
+			[
+				"fir",
+				"page-firm_overview.php"
+			],
+			[
+				"f",
+				"functions.php"
+			],
+			[
+				"header.php",
+				"header.php"
+			],
+			[
+				"bones",
+				"library/bones.php"
+			],
+			[
+				"funct",
+				"functions.php"
+			],
+			[
+				"header",
+				"header.php"
+			],
+			[
+				"functions.php",
+				"functions.php"
+			],
+			[
+				"res",
+				"page-results.php"
+			],
+			[
+				"areas",
+				"page-practice_areas.php"
+			],
+			[
+				"mixins",
+				"content/themes/freshops/library/less/_mixins.less"
+			],
+			[
+				"functi",
+				"content/themes/freshops/functions.php"
+			],
+			[
+				"function",
+				"wp-content/themes/freshops/functions.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 209.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -1,0 +1,144 @@
+/******************************************************************
+Site Name: Rose, Senders & Bovarnick
+Author: Ben Beekman and Ted Marshall, 33 Degrees Design Studio
+
+Stylesheet: 481px and Up Stylesheet
+
+This stylesheet is loaded for devices larger than an iPhone. It's set to
+481px because at 480px it would load on a landscaped iPhone.
+
+******************************************************************/
+.cta-textbox{
+	h1{
+		color: @darkbrown;
+		font-size: 1.65rem;
+		line-height: 1.1em;
+		margin: 0.4em 0 0 0;
+	} //end h1
+	p{
+		font-size: .9rem;
+	} //end p
+}
+
+
+/*********************
+NAVIGATION STYLES
+*********************/
+/* start .header */
+.header{
+		nav {
+			/* .menu is clearfixed inside mixins.scss */
+			ul.nav {
+				li{
+					a {}
+					ul, ul.sub-menu, ul.children {
+						background-color: @white;
+						color: @black;
+						li {
+							a {
+								background-color: @white;
+								color: @black;
+								border-radius: 0;
+								&:hover, &:focus {
+									background-color:@black;
+									color: @white;
+								}
+							} //a
+						}//li
+					} //ul, ul.sub-menu, ul.children
+				} //li
+				/* highlight current page */
+				li.current-menu-item,
+				li.current_page_item,
+				li.current-page-ancestor {
+					a {border-color: @tintblack;
+						border-style: solid;
+						border-radius: 0.75rem;
+					}
+					}  /* end current highlighters */
+					} /* end .menu ul */
+
+		} /* end .menu */
+		} /* end .header */
+/*********************
+POSTS & CONTENT STYLES
+*********************/
+
+/* entry content */
+.entry-content {
+
+
+	/* at this larger size, we can start to align images */
+	.alignleft, img.alignleft {
+		margin-right: 1.5em;
+		display: inline;
+		float: left;
+	}
+	.alignright, img.alignright {
+		margin-left: 1.5em;
+		display: inline;
+		float: right;
+	}
+	.aligncenter, img.aligncenter {
+		margin-right: auto;
+		margin-left: auto;
+		display: block;
+		clear: both;
+	}
+
+} /* end .entry-content */
+
+
+footer.footer {
+	nav {
+		li {
+			a {
+				&:hover, &:focus {
+
+				} //end hover/focus
+			} //end a
+
+			&:first-child {}
+
+			&:last-child {}
+
+			/*
+			so you really have to rethink your dropdowns for mobile.
+			you don't want to have it expand too much because the
+			screen is so small. How you manage your menu should
+			depend on the project. Here's some great info on it:
+			http://www.alistapart.com/articles/organizing-mobile/
+			*/
+			ul.sub-menu,
+			ul.children {
+				background-color: transparent;
+
+				li {
+
+					a {
+						&:hover,
+						&:focus {}
+
+						&:link {}
+
+						} /* end a */
+
+						&:first-child {}
+
+						&:last-child {}
+
+						} /* end li */
+
+			} //end ul.sub-menu, ul.children
+		} /* end .menu li */
+
+		/* highlight current page */
+		li.current-menu-item,
+		li.current_page_item,
+		li.current_page_ancestor {
+			// border: 2px @nav-hover;
+			// border-radius: 10px;
+			a {}
+			}  /* end current highlighters */
+	} /* end nav */
+}
