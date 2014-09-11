@@ -42,6 +42,7 @@ function rsb_result_cpt() {
 			'query_var' => true,
 			'menu_position' => 21, /* this is what order you want it to appear in on the left hand side menu */ 
 			'menu_icon' => get_stylesheet_directory_uri() . '/library/images/icon-results.png', /* the icon for the custom post type menu */
+			'taxonomies' => array('category', 'post_tag'), /* displays categories and tags for the cpt */
 			'capability_type' => 'post'
 		) /* end of options */
 	); /* end of register Results */
