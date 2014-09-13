@@ -8,14 +8,14 @@ This stylesheet is loaded for devices larger than an iPhone. It's set to
 481px because at 480px it would load on a landscaped iPhone.
 
 ******************************************************************/
-.cta-textbox{
-	h1{
+.cta-textbox {
+	h1 {
 		color: @darkbrown;
 		font-size: 1.65rem;
 		line-height: 1.1em;
 		margin: 0.4em 0 0 0;
 	} //end h1
-	p{
+	p {
 		font-size: .9rem;
 	} //end p
 }
@@ -26,48 +26,53 @@ NAVIGATION STYLES
 *********************/
 /* start .header */
 .header{
-		nav {
-			/* .menu is clearfixed inside mixins.scss */
-			ul.nav {
-				li{
-					a {}
-					ul, ul.sub-menu, ul.children {
-						background-color: @white;
-						color: @black;
-						li {
-							a {
-								background-color: @white;
+	nav {
+		/* .menu is clearfixed inside mixins.scss */
+		ul.nav {
+			li{
+				a {
+					border: 1px solid transparent;
+				}
+				ul, ul.sub-menu, ul.children {
+					background-color: @white;
+					color: @black;
+					box-shadow: 0px 4px 4px rgba(0,0,0,0.5);
+					li {
+						a {
+							background-color: @white;
+							color: @black;
+							border-radius: 0;
+							&:hover, &:focus {
+								background-color:lighten(@offwhite,10%);
 								color: @black;
-								border-radius: 0;
-								&:hover, &:focus {
-									background-color:@black;
-									color: @white;
-								}
-							} //a
-						}//li
-					} //ul, ul.sub-menu, ul.children
-				} //li
-				/* highlight current page */
-				li.current-menu-item,
-				li.current_page_item,
-				li.current-page-ancestor {
-					a {border-color: @tintblack;
-						border-style: solid;
-						border-radius: 0.75rem;
-					}
-					}  /* end current highlighters */
-					} /* end .menu ul */
+							}
+						} //a
+					}//li
+				} //ul, ul.sub-menu, ul.children
+			} //li
+			/* highlight current page */
+			li.current-menu-item,
+			li.current_page_item,
+			li.current-page-ancestor {
+				a { 
+					border-color: @offwhite;
+				}
+				> ul a {
+					border: none;
+				}
+			}  /* end current highlighters */
+		} /* end .menu ul */
+	} /* end .menu */
+} /* end .header */
 
-		} /* end .menu */
-		} /* end .header */
+
+
 /*********************
 POSTS & CONTENT STYLES
 *********************/
 
 /* entry content */
 .entry-content {
-
-
 	/* at this larger size, we can start to align images */
 	.alignleft, img.alignleft {
 		margin-right: 1.5em;
@@ -85,7 +90,6 @@ POSTS & CONTENT STYLES
 		display: block;
 		clear: both;
 	}
-
 } /* end .entry-content */
 
 
@@ -94,12 +98,9 @@ footer.footer {
 		li {
 			a {
 				&:hover, &:focus {
-
 				} //end hover/focus
 			} //end a
-
 			&:first-child {}
-
 			&:last-child {}
 
 			/*
@@ -112,23 +113,15 @@ footer.footer {
 			ul.sub-menu,
 			ul.children {
 				background-color: transparent;
-
 				li {
-
 					a {
 						&:hover,
 						&:focus {}
-
 						&:link {}
-
-						} /* end a */
-
-						&:first-child {}
-
-						&:last-child {}
-
-						} /* end li */
-
+					} /* end a */
+					&:first-child {}
+					&:last-child {}
+				} /* end li */
 			} //end ul.sub-menu, ul.children
 		} /* end .menu li */
 
@@ -139,6 +132,6 @@ footer.footer {
 			// border: 2px @nav-hover;
 			// border-radius: 10px;
 			a {}
-			}  /* end current highlighters */
+		}  /* end current highlighters */
 	} /* end nav */
 }

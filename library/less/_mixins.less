@@ -30,7 +30,7 @@ TOOLS
 
 // http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement/
 .image-replacement {
-		font: 0/0 a;
+	font: 0/0 a;
 	text-shadow: none;
 	color: transparent;
 }
@@ -51,7 +51,7 @@ http://0to255.com/
 @darkbrown: 		#401F18;
 @offwhite:			#e2dfcc;
 @whitetan:			#f6f5f0;
-@white: 				#ffffff;
+@white: 			#ffffff;
 @darkwhite:			#d9d1ba;
 @whitegrey:			#C5C5C5;
 @grey: 				#8b8c80;
@@ -60,7 +60,7 @@ http://0to255.com/
 @darkred:			#401f17;
 @red:				#ed5d06;
 @brightred:			#d93d04;
-@orange:				#c61e02;
+@orange:			#c61e02;
 @bodycolor:			#222;
 @headercolor: 		@darkred;
 @maroon: 			#d83d04;
@@ -82,6 +82,8 @@ TYPOGRAPHY
 @sans:         "Arial", Arial, Helvetica, sans-serif;
 @serif:        @garamond;
 @garamond:     Merriweather,"Adobe Garamond Pro","Adobe Garamond","EB Garamond",Garamond,"Times New Roman",Times;
+
+@base: 21px;
 
 
 /******************************************
@@ -293,7 +295,6 @@ BUTTONS
 	line-height: 21px;
 	-webkit-box-shadow: 0px 1px 4px -1px @black;
 	box-shadow: 0px 1px 4px -1px @black;
-	.transition(all, 0.2s);
 	.border-radius(10px);
 	border: 1px solid;
 	&:after {
@@ -301,7 +302,7 @@ BUTTONS
 	}
 }
 
-a{
+a {
 	.button1, .primary-button, .button-primary, .button { //orange/red buttons
 		&:extend(.button_base);
 		border-color: darken(@darkred, 7%), darken(@darkred, 13%) darken(@darkred, 13%), darken(@darkred, 7%);
@@ -309,13 +310,15 @@ a{
 		color:@white;
 		&:hover, &:focus, &:active {
 			.css-gradient(@orange,@red);
-			color: @offwhite;
+			color: @white;
 		} //box hover, focus, active
-		&:visited, &:link {color:@white;}
-	}//button1
-}//a
+		&:visited, &:link {
+			color:@white;
+		}
+	} //button1
+} //a
 
-a{
+a {
 	.button2, .secondary-button, .button-secondary { //black & white buttons
 		&:extend(.button_base);
 		text-align: center;
@@ -323,14 +326,13 @@ a{
 		background-color: @gray;
 		width: 100%;
 		color: @white;
-			&:hover, &:focus, &:active {
-				color: @white;
-				background-color: darken(@gray, 20%);
-			}
-			&:link, &:visited {
-					color: @gray;
-					color: @white;
-			}
+		&:hover, &:focus, &:active {
+			color: @white;
+			background-color: darken(@gray, 20%);
+		}
+		&:link, &:visited {
+			color: @white;
+		}
 	}//button2, .secondary-button
 }
 
@@ -347,7 +349,7 @@ a{
 	border-width: 5px;
 }
 
-.entry-content>.byline, .article-header>.byline{
+.entry-content > .byline, .article-header > .byline{
 	padding: 0.5rem 0;
 	margin: 0px;
 	max-width: 75%;

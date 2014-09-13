@@ -7,15 +7,17 @@ For iPads, other tablets, and desktops.
 ******************************************************************/
 .slogan { //the Emergency phone number in the top right on desktop+
     display: inline-block;
-    font-size: 1rem;
-    margin: 0 0 0 0;
+    font-size: 0.85em;
+    margin: 0;
     position: absolute;
-    right: 1rem;
+    right: 0.8em;
     top: 10px;
     visibility: visible;
     color: @offwhite;
 }
-
+.home .entry-content p {
+	text-align: center;
+}
 //header size is smaller without meanMenu
 header {
 	.abovenav {
@@ -25,10 +27,11 @@ header {
 		margin-right:1rem;
 		color: @offwhite;
 		:after { clear:both; }
-		}	//.abovenav}
-		}//header
+	}
+}//header
 
-.header {background-size: 100% 106px;
+.header {
+	background-size: 100% 106px;
 	nav {
 
 	} //nav
@@ -67,10 +70,18 @@ header {
 //VERTICAL RULES/ COLUMN SEPARATORS
 vr-l {
 	border-left: 1px solid @black;
+	padding-left: 1em;
 }
 
 vr-r {
 	border-right: 1px solid @black;
+}
+#inner-footer .fivecol {
+	margin: 0 0 0 1em;
+	border-top:0px solid darken(@darkbrown,10);
+	border-bottom:0px solid darken(@darkbrown,10);
+	border-left:2px dashed darken(@darkbrown,10);
+	border-right:2px dashed darken(@darkbrown,10);
 }
 
 .fivecol.css-box:nth-of-type(3) { //breakpoints for css-boxed content inside template loops
@@ -88,7 +99,7 @@ LAYOUT & GRID STYLES
 *********************/
 
 .wrap {
-		max-width: 1140px;
+	max-width: 1140px;
 }
 
 /*********************
@@ -217,7 +228,7 @@ footer.footer{
 			padding: 0;
 		}//.wrap
 	nav {
-		margin: 2rem 0 2rem 0; //add a bit of vertical padding like the other footer elements
+		margin: 0.42rem 0 2rem 0; //add a bit of vertical padding like the other footer elements
 		padding: 0 0 0 1rem; //at this size, footer is columned, no horizontal padding is necessary:
 		font-size: 0.9rem;
 		background: @darkred;
@@ -244,7 +255,6 @@ footer.footer{
 				color: @white;
 
 				&:hover, &:focus {
-					background-color: @black;
 					color: @offwhite;
 				}
 			}

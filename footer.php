@@ -7,14 +7,14 @@
 						<?php } //endif ?>
 					</div>
 <!-- center two columns start here -->
-					<div class="fivecol">
+					<div class="fivecol clearfix">
 						<!-- subdivided nav starts -->
-						<div class="sevencol vr-l first"> <!-- first of two nav cols-->
+						<div class="sixcol vr-l"> <!-- first of two nav cols-->
 							<nav role="navigation">
 								<?php footer_links_left(); ?>
 							</nav>
 						</div>
-						<div class="fivecol vr-r"><!-- second of two nav cols-->
+						<div class="sixcol vr-r"><!-- second of two nav cols-->
 							<nav role="navigation">
 								<?php footer_links_right(); ?>
 							</nav>
@@ -29,7 +29,7 @@
 						<?php } //endif ?>
 					</div> <!-- right-side footer widgets end here-->
 
-					<div class="clearfix twelvecol first last aligncenter"><p class="source-org copyright">Copyright &copy;<?php echo date('Y');?> Rose, Senders &amp; Bovarnick, LLC. All rights reserved.</p></div>
+					<div class="clearfix twelvecol first last aligncenter"><p class="source-org copyright">Copyright &copy; <?php echo date('Y');?> Rose, Senders &amp; Bovarnick, LLC. All rights reserved.</p></div>
 				</div> <!-- end #inner-footer -->
 
 			</footer> <!-- end footer -->
@@ -39,7 +39,7 @@
 
 		<!-- all js scripts are loaded in library/bones.php -->
 		<?php wp_footer(); ?>
-
+		<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 	</body>
 
 	</html> <!-- end page. what a ride! -->
