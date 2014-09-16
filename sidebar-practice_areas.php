@@ -3,15 +3,13 @@
     <?php if ( is_active_sidebar( 'practice-areas-sidebar' ) ) { ?>
         <?php dynamic_sidebar( 'practice-areas-sidebar' );
     } //endif
-   else; //ignore
-   //endif
+	else; //ignore
+	//endif
     $qf=get_field('quick-facts', 13);
     $quickfacts = '<div id="quick-facts">'; //prepend opening div
     $quickfacts .= $qf;
     $quickfacts .= '</div>'; //append closing div
-   echo $quickfacts;
-
-        //posts the quick facts advanced custom field from the practice areas page in the sidebar
-?>
+    echo $quickfacts;
+    //posts the quick facts advanced custom field from the practice areas page in the sidebar ?>
 
 </div>

@@ -5,20 +5,19 @@
 <?php get_header(); ?>
 
 <div id="content">
-	<?php if (have_posts()) {
-		while (have_posts()) {
-			the_post();
-	?>
 	<div id="inner-content" class="wrap clearfix">
 
 		<div id="main" class="twelvecol first clearfix" role="main">
+			<?php if (have_posts()) {
+				while (have_posts()) {
+					the_post();
+			?>
 
 			<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
 				<header class="article-header">
 
 					<h1 class="page-title"><?php the_title(); ?></h1>
-
 
 				</header> <!-- end article header -->
 
@@ -28,14 +27,14 @@
 
 				<footer class="article-footer">
 					<p class="clearfix"><?php the_tags('<span class="tags">' . __('Tags:', 'rsblawtheme') . '</span> ', ', ', ''); ?></p>
-
 				</footer> <!-- end article footer -->
 
 				<?php comments_template(); ?>
 
 			</article> <!-- end article -->
 
-			<?php } //endwhile } else { ?>
+			<?php } //endwhile
+			} else { ?>
 
 			<article id="post-not-found" class="hentry clearfix">
 				<header class="article-header">
@@ -54,7 +53,6 @@
 		</div> <!-- end #main -->
 
 	</div> <!-- end #inner-content -->
-
 </div> <!-- end #content -->
 
 <?php get_footer(); ?>

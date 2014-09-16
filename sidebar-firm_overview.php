@@ -1,7 +1,7 @@
-					<?php if ( is_active_sidebar( 'firm-overview-sidebar' ) ) { ?>
+<?php if ( is_active_sidebar( 'firm-overview-sidebar' ) ) { ?>
 
-						<?php dynamic_sidebar( 'firm-overview-sidebar' ); ?>
+	<?php dynamic_sidebar( 'firm-overview-sidebar' ); ?>
 
-					<?php } else { ?>
+<?php } else { ?>
 
-					<?php } //endif ?>
+<?php } //endif ?>

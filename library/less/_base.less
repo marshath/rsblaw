@@ -33,18 +33,31 @@ Don't over-style here--everything in this file will be loaded by mobile devices.
 	span {padding: 0 0.5rem 0 0;} //spacing between meta links
 } //.entry-meta
 
-#main ul > li {font-size:1rem;}
-//FIXING FONT SIZES FOR SPECIFIC ELEMENTS ENDS HERE
+#main ul > li {
+	font-size:1rem;
+}
 
+//FIXING FONT SIZES FOR SPECIFIC ELEMENTS ENDS HERE
 mark {
 	background-color: transparent;
 	font-weight: 700;
 }
+
 h2.section-title { //add left margins for section titles outside the article tag
 	padding-left: 2rem;
 }
 
-#main>header.article-header {padding-left: 2rem;}
+#main>header.article-header {
+	padding-left: 2rem;
+}
+
+#post-13 .entry-content .css-box {
+	width:46% !important;
+}
+
+.page-template-page-practice_areas-php .entry-content p:first-child {
+	font-size:1.2em;
+}
 
 
 
@@ -69,7 +82,6 @@ ICON FONT FROM ICOMOON STARTS HERE
 	font-variant: normal;
 	font-weight: normal;
 	line-height: 1;
-	padding-right: 0.15em;
 	text-transform: none;
 
 	/* Better Font Rendering =========== */
@@ -135,16 +147,16 @@ ICON FONT FROM ICOMOON ENDS HERE
 	max-width: 100%;
 	border-width: 12px solid @white;
 	background-color: @paleyellow;
-	padding: 0.25rem 1rem;
-	border: 0.5rem solid @white;
-	h1{
+	padding: 0.25em 1em;
+	border: 0.5em solid @white;
+	h1 {
 		color: @darkbrown;
-		font-size: 2.25rem;
+		font-size: 2.25em;
 		line-height: 1.1em;
 		margin: 0.4em 0 0 0;
 	} //end h1
-	p{
-		font-size: 1rem;
+	p {
+		font-size: 1em;
 	} //end p
 } //end .cta-textbox
 
@@ -175,7 +187,7 @@ ICON FONT FROM ICOMOON ENDS HERE
 	top: 27px;
 	z-index: 999;
 }
-.home-link>img {
+.home-link > img {
 	width: 100%;
 	max-width: 341px;
 	height: auto;
@@ -187,27 +199,33 @@ ICON FONT FROM ICOMOON ENDS HERE
 	z-index: 5;
 }
 
-img {max-width: 100%;
+img {
+	max-width: 100%;
 	height: auto;
 	padding: 0 1rem 0 0;
 }
 article {
-	ul{list-style-type:disc;}
-	ol{list-style-type:decimal;}
 	list-style-position:inside;
+	ul{ 
+		list-style-type:disc; 
+	}
+	ol{ 
+		list-style-type:decimal; 
+	}
 }
 
 //Quick Facts sidebar list ACF formatting
-#quick-facts ul {
-	font-size: 1rem;
-	list-style-type: disc;
-	list-style-position: inside;
-	margin-left: 1.8rem;
-	margin-top: 0;
-	font-size: 1.15rem;
-	line-height: 1.3;
-	list-style-position: outside;
-	list-style-type: disc;
+#quick-facts {
+	ul {
+		margin-left: 1.8rem;
+		margin-top: 0;
+		line-height: 1.3;
+		list-style-position: outside;
+		list-style-type: disc;
+	}
+	li {
+		margin-bottom: 1em;
+	}
 }
 //, #text-6 > div:nth-child(2)
 
@@ -227,7 +245,6 @@ article {
 	}
 }
 
-
 //testimonials in sidebar need big margin for quotation mark :before
 .bne-testimonial-slider.flexslider {
 	padding-top: 20px;
@@ -237,15 +254,10 @@ article {
 .tan_box {
 	.tanbox {}
 }
+
 .blog-bar {
 	background-color:@darkwhite;
 }
-
-section {
-	font-size: 0.875rem; //14px body content
-}
-
-
 
 img.attachment-cta-bg.wp-post-image {
 	// margin-top: -20px;
@@ -259,7 +271,9 @@ img.attachment-cta-bg.wp-post-image {
 p {
 	color: #222;
 	font: @sans;
-	.first { font-weight: bold; }
+	.first { 
+		font-weight: bold; 
+	}
 }
 
 // SEPARATOR/DIVIDER RULES (HR etc.)
@@ -275,7 +289,6 @@ hr {
 		padding-left: 0;
 	}
 }
-
 
 .vr,.vr-l {
 	padding: 0 1rem 0 2rem; //only for mobile
@@ -332,15 +345,6 @@ ivycat-post {padding:0em 1em;}
  }
 
 
-
-
-
-
-
-
-
-
-
 /*********************
 01. GENERAL STYLES
 *********************/
@@ -356,44 +360,34 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
 /*************************
 02. WORDPRESS BODY CLASSES
 specific page styles using body class as top selector
 ********************/
 
 
-
 /* BEGIN HOMEPAGE-SPECIFIC STYLES
 ________________________________________________________________________*/
 .home { //hide homepage "Home" title
-h1.entry-title {
-	display: none;
-	visibility: hidden;
-}
-	.page-title { //don't display "Home" heading on the home page
-	visibility: hidden;
-	display:none;
-}
-	h2.page-title-alt{ //the "practice areas" headline on home
-	font-size: 2.2rem;
-	font-weight: 700;
-	margin: 1em 12.5% 0 12.5%;
-	border-bottom: 2px solid @tan;
-	width: 75%;
-	text-align:center;
-	a {
-		color: @black;
+	h1.entry-title {
+		display: none;
+		visibility: hidden;
 	}
-	}//h2
+		.page-title { //don't display "Home" heading on the home page
+		visibility: hidden;
+		display:none;
+	}
+	h2.page-title-alt { //the "practice areas" headline on home
+		font-size: 2.2rem;
+		font-weight: 700;
+		margin: 1em 12.5% 0 12.5%;
+		border-bottom: 2px solid @tan;
+		width: 75%;
+		text-align:center;
+		a {
+			color: @black;
+		}
+	} //h1
 	#content #inner-content{
 		margin-top: 0px;
 	}
@@ -401,17 +395,17 @@ h1.entry-title {
 
 
 //the lawyer page uses sixcols in a double-wide grid-- we'll add the "first" and "last" styling since it's easier than alternating the classes in the loop
-.page-template-page-who_we_are-php{
+.page-template-page-who_we_are-php {
 	article {
-		section > div.sixcol:nth-child(odd){ float:right;}
-		section > div.sixcol:nth-child(even){ margin-left: 0; clear: both;}
-		div.fourcol{width: 30.5%;}
-	div.fourcol:nth-child(3n+2) { //the leftmost columns of the staff section
-		margin-left: 0; clear: both;
-	}
-	div.fourcol:nth-child(3n+4) { // the rightmost columns of the staff section
-		float:right;
-	}
+		section > div.sixcol:nth-child(odd) { float:right; }
+		section > div.sixcol:nth-child(even) { margin-left: 0; clear: both; }
+		div.fourcol { width: 30.5%; }
+		div.fourcol:nth-child(3n+2) { //the leftmost columns of the staff section
+			margin-left: 0; clear: both;
+		}
+		div.fourcol:nth-child(3n+4) { // the rightmost columns of the staff section
+			float:right;
+		}
 	} //article
 }
 .blog {}                          /* blog template page */
@@ -439,21 +433,22 @@ h1.entry-title {
 .tag-slug {}                    /* individual tag page (i.e. body.tag-news) */
 .tag-paged-1 {}                 /* replace the number to the corresponding page number */
 .page-template {
-	article section p:first-line {text-decoration: all-caps;}
+	article section p:first-line { text-decoration: all-caps; }
 	p:first {
 		font-face: @sans;
 		font-size: 2rem;
 		line-height: 1.8;
 	}
-	}                 /* custom page template page */
-	.page-template-page-php {}      /* individual page template (i.e. body.page-template-contact-php */
-	                                                             .page-paged-1 {}                /* replace the number to the corresponding page number */
-	                                                             .page-parent {}                 /* parent page template */
-	                                                             .page-child {}                  /* child page template */
-	                                                             .parent-pageid-1 {}             /* replace the number to the corresponding page number */
-	                                                             .logged-in {}                     /* if user is logged in */
-	                                                             .paged {}                         /* paged items like search results or archives */
-	                                                             .paged-1 {}                     /* individual paged (i.e. body.paged-3) */
+} /* custom page template page */
+.page-template-page-php {}      /* individual page template (i.e. body.page-template-contact-php */
+.page-paged-1 {}                /* replace the number to the corresponding page number */
+.page-parent {}                 /* parent page template */
+.page-child {}                  /* child page template */
+.parent-pageid-1 {}             /* replace the number to the corresponding page number */
+.logged-in {}                     /* if user is logged in */
+.paged {}                         /* paged items like search results or archives */
+.paged-1 {}                     /* individual paged (i.e. body.paged-3) */
+
 
 /*********************
 03. LAYOUT & GRID STYLES
@@ -469,6 +464,8 @@ h1.entry-title {
 #container {
 	width: 100%;
 }
+
+
 /*********************
 04. LINK STYLES
 *********************/
@@ -499,6 +496,7 @@ a, a:visited {
 	}
 }
 
+
 /******************************************************************
 05. H1, H2, H3, H4, H5 STYLES
 ******************************************************************/
@@ -521,17 +519,22 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 h1, .h1 {
 	line-height: 1.333em;
 	color: @darkbrown;
-	font-size: 2.25rem; //36px Garamond
+	font-size: 2.65em; //36px Garamond
 	font-weight: 700;
 }
 
-h1.page-title {margin: 1rem 0 0 0;}
+h1.page-title { margin: 1rem 0 0 0; }
 h2, .h2 { //page/single post titles
-	line-height: 1.333em;
+	line-height: 0;
 	color: @darkbrown;
-	font-size: 2.25rem; //36px Garamond
+	font-size: 2em; //36px Garamond
 	font-weight: 400;
-	margin: 0.63em 0 0 0;
+	margin: (@base*2) 0 0 0;
+	text-decoration: underline;
+}
+.home h2 {
+	text-decoration: none;
+	line-height: 1.75em;
 }
 
 h3, .h3 { //uppercase subhead font
@@ -563,31 +566,27 @@ p.excerpt {
 }
 
 
-
-
-
-
-
 /*********************
 06. HEADER STYLES
 *********************/
 
 .header {
-		background-image: linear-gradient(to bottom, rgba(170,170,170,1) 0%,rgba(23,11,8,1) 1%,rgba(25,11,10,1) 17%,rgba(46,22,18,1) 35%,rgba(64,30,25,1) 65%,rgba(65,30,25,1) 100%); //two background images: gradient beneath logo
-		background-position: left top;
-		background-repeat: no-repeat;
-		background-size: 100% 151px; //size of header determines size of gradient background--
-		//logo is taller so that it overlaps the content area
-		background-attachment: scroll;
-		position: relative;
-		z-index: 10;
-		ul {
-			margin-bottom:0;
-		}
-		.entry-meta {
-			font-size: 1rem;
-		}
+	background-image: linear-gradient(to bottom, rgba(170,170,170,1) 0%,rgba(23,11,8,1) 1%,rgba(25,11,10,1) 17%,rgba(46,22,18,1) 35%,rgba(64,30,25,1) 65%,rgba(65,30,25,1) 100%); //two background images: gradient beneath logo
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-size: 100% 151px; //size of header determines size of gradient background--
+	//logo is taller so that it overlaps the content area
+	background-attachment: scroll;
+	position: relative;
+	z-index: 10;
+	ul {
+		margin-bottom:0;
+	}
+	.entry-meta {
+		font-size: 1rem;
+	}
 } //end header
+
 
 /*********************
 07. NAVIGATION STYLES
@@ -621,7 +620,6 @@ and more scalable.
 }//.nav
 
 
-
 /*********************
 08. POSTS & CONTENT STYLES
 *********************/
@@ -630,7 +628,7 @@ and more scalable.
 	#inner-content { margin-top: 0;
 		.css-box {
 			margin-top: 4rem; //margin to account for icons below the boxes
-			margin-bottom: 2rem;
+			margin-bottom: (@base*2);
 			padding: 0.5rem 1.5rem;
 			border: 5px solid @white;
 			-webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.27);
@@ -639,10 +637,12 @@ and more scalable.
 			font-size: 1rem;
 
 			[class^="icon-"], [class*=" icon-"] {
-				font-size: 6rem; //icon size inside css-boxes
+				font-size: 6em; //icon size inside css-boxes
 				text-align: center;
 				color: @darkred;
 				margin-top: -4rem;
+				margin-left: 0.1em;
+				width: 100%;
 			}
 
 			p {text-align: center;}
@@ -839,6 +839,7 @@ pre {
 		.size-medium {}
 		.size-thumbnail {}
 
+
 /******************************************************************
 09. PAGE NAVI STYLES
 ******************************************************************/
@@ -951,6 +952,7 @@ pre {
 
 			} /* end .wp-prev-next */
 }//end bones page navi
+
 
 /******************************************************************
 10. COMMENT STYLES
@@ -1129,6 +1131,7 @@ pre {
 
 					} /* end .commentlist */
 
+
 /******************************************************************
 11. COMMENT FORM STYLES
 ******************************************************************/
@@ -1210,9 +1213,14 @@ pre {
 	margin: 0 20px 1.1em;
 }
 
+
 /*********************
 12. SIDEBARS & ASIDES
 *********************/
+
+.widget-title {
+	text-transform: uppercase;
+}
 
 .bne_testimonial_slider_widget {
 	-webkit-box-shadow: 2px 2px 9px -1px #fff; /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
@@ -1230,8 +1238,8 @@ pre {
 		font-family: @garamond;
 		font-weight: bold;
 		font-style:italic;
-		font-size: 2.2rem;
-		line-height: 1.09090909091;
+		font-size: 1.6rem;
+		line-height: 1.25;
 		margin: 0 0 0 0;
 		padding: 0 0 0 0;
 		position:static;
@@ -1239,12 +1247,12 @@ pre {
 		display: inline-block;
 		color: @black;
 	}
-	.bne-testimonial-description p{
+	.bne-testimonial-description p {
 		&:before {
-		 //quotation mark pullquote graphic starts here
-		 color: @grey;
-		 content: '\201C';
-		 float: left;
+			//quotation mark pullquote graphic starts here
+			color: @grey;
+			content: '\201C';
+			float: left;
 			// font-size: 5rem; //quotation mark size
 			//
 			// line-height: 0.8;
@@ -1262,7 +1270,6 @@ pre {
 	} //.bne-testimonial-description
 } //.bne_testimonial_slider_widget
 
-
 .sidebar {
 	padding: 0 2em; //left and right padding for mobile
 	margin-top: (@base*3) !important;
@@ -1279,6 +1286,7 @@ ul {
 	}
 }//sidebar
 
+
 /*********************
 13. FOOTER STYLES
 *********************/
@@ -1287,10 +1295,10 @@ footer .nav li a {
 	display: block;
 	clear: both;
 }
+
 footer .nav {
 	clear: both;
 }
-
 
 footer.footer { // footer (and footer nav) formatting
 	margin-top:(@base*3);

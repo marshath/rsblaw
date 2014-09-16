@@ -2,6 +2,6 @@
 
 	<?php if ( is_active_sidebar( 'blog-archive-sidebar' ) ) { ?>
 		<?php dynamic_sidebar( 'blog-archive-sidebar' ); ?>
-	<?php } //endif
-   ?>
+	<?php } //endif ?>
+	
 </div>

@@ -564,6 +564,9 @@ values are commented out on each line.
 .center {
   text-align: center;
 }
+.cushion {
+  height: 42px;
+}
 /******************************************************************
 Site Name: Rose, Senders & Bovarnick
 Author: Ben Beekman and Ted Marshall, 33 Degrees Design Studio
@@ -617,12 +620,16 @@ header .abovenav :after {
 }
 .cta-textbox {
   position: absolute;
-  left: 48%;
+  right: 0;
+  background: rgba(226, 223, 204, 0.9);
   max-width: 49%;
   top: 1.25%;
+  border-right: 0px;
+  box-shadow: -8px 8px 8px rgba(0, 0, 0, 0.65);
 }
 .cta-textbox h1 {
   font-size: 1.65rem;
+  text-shadow: 1px 1px 2px #ffffff;
 }
 .cta-textbox p {
   font-size: 0.88rem;
@@ -647,6 +654,9 @@ vr-r {
 /*********************
 GENERAL STYLES
 *********************/
+#content #inner-content .css-box {
+  min-height: 357px;
+}
 /*********************
 LAYOUT & GRID STYLES
 *********************/
@@ -914,7 +924,6 @@ be seen on the Desktop.
   min-height: 396px;
 }
 .cta-textbox {
-  left: 41%;
   top: 1.25%;
   max-width: 55%;
 }

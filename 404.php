@@ -1,43 +1,33 @@
 <?php get_header(); ?>
 
-			<div id="content">
+		<div id="content">
+			<div id="inner-content" class="wrap clearfix">
 
-				<div id="inner-content" class="wrap clearfix">
+				<div id="main" class="eightcol first clearfix" role="main">
 
-					<div id="main" class="eightcol first clearfix" role="main">
+					<article id="post-not-found" class="hentry clearfix">
 
-						<article id="post-not-found" class="hentry clearfix">
+						<header class="article-header">
+							<h1><?php _e("Article Not Found", "rsblawtheme"); ?></h1>
+						</header> <!-- end article header -->
 
-							<header class="article-header">
+						<section class="entry-content">
+							<p><?php _e("The article you were looking for was not found, sorry. Try browsing to it from links on our site.", "rsblawtheme"); ?></p>
+						</section> <!-- end article section -->
 
-								<h1><?php _e("Article Not Found", "rsblawtheme"); ?></h1>
+						<section class="search">
+							<p><?php get_search_form(); ?></p>
+						</section> <!-- end search section -->
 
-							</header> <!-- end article header -->
+						<footer class="article-footer">
+							<p><?php _e("This is the 404.php template.", "rsblawtheme"); ?></p>
+						</footer> <!-- end article footer -->
 
-							<section class="entry-content">
+					</article> <!-- end article -->
 
-								<p><?php _e("The article you were looking for was not found, sorry. Try browsing to it from links on our site.", "rsblawtheme"); ?></p>
+				</div> <!-- end #main -->
 
-							</section> <!-- end article section -->
-
-							<section class="search">
-
-									<p><?php get_search_form(); ?></p>
-
-							</section> <!-- end search section -->
-
-							<footer class="article-footer">
-
-									<p><?php _e("This is the 404.php template.", "rsblawtheme"); ?></p>
-
-							</footer> <!-- end article footer -->
-
-						</article> <!-- end article -->
-
-					</div> <!-- end #main -->
-
-				</div> <!-- end #inner-content -->
-
-			</div> <!-- end #content -->
+			</div> <!-- end #inner-content -->
+		</div> <!-- end #content -->
 
 <?php get_footer(); ?>
