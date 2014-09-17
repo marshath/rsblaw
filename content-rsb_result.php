@@ -11,11 +11,14 @@
 		
 		    <header class="article-header">
 		        <?php if ( is_single() ) { ?>
+		        
 		        	<h1 class="entry-title single-title" itemprop="headline"><?php the_title(); ?></h1>
 		            <h5><?php the_time( get_option( 'date_format' ) ); ?></h5>
-		        <?php } //end if
-		        else { ?>
-		        	<h3 class="entry-title" itemprop="headline"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+		            
+		        <?php } else { ?>
+		        
+		        	<h3 class="entry-title" itemprop="headline"><?php the_title(); ?></h3>
+		        	
 		        <?php } ?> <!-- end multiple posts title  -->
 		    </header> <!-- end article header -->
 		    

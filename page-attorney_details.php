@@ -70,7 +70,7 @@ get_header();
 				wp_reset_postdata(); // Restore original Post Data
 			} //endif
 			?>
-
+			<div class="clearfix cushion"></div>
 			<div class="sixcol first tan_box">
 				<h2 class="section-title"><?php echo $displayname; ?>'s Amazing Results</h2>
 

@@ -34,7 +34,7 @@ Don't over-style here--everything in this file will be loaded by mobile devices.
 } //.entry-meta
 
 #main ul > li {
-	font-size:1rem;
+	margin-left: 2em;
 }
 
 //FIXING FONT SIZES FOR SPECIFIC ELEMENTS ENDS HERE
@@ -47,7 +47,7 @@ h2.section-title { //add left margins for section titles outside the article tag
 	padding-left: 2rem;
 }
 
-#main>header.article-header {
+#main > header.article-header {
 	padding-left: 2rem;
 }
 
@@ -58,8 +58,6 @@ h2.section-title { //add left margins for section titles outside the article tag
 .page-template-page-practice_areas-php .entry-content p:first-child {
 	font-size:1.2em;
 }
-
-
 
 /******************************************
 ICON FONT FROM ICOMOON STARTS HERE
@@ -205,17 +203,18 @@ img {
 	padding: 0 1rem 0 0;
 }
 article {
-	list-style-position:inside;
 	ul{ 
 		list-style-type:disc; 
 	}
 	ol{ 
 		list-style-type:decimal; 
+		margin-left: 2em;
 	}
 }
 
 //Quick Facts sidebar list ACF formatting
 #quick-facts {
+	h4 { text-transform: uppercase; }
 	ul {
 		margin-left: 1.8rem;
 		margin-top: 0;
@@ -240,7 +239,6 @@ article {
 
 .widget ul {
 	li {
-		font-size: 1.4rem;
 		a{}
 	}
 }
@@ -251,12 +249,19 @@ article {
 	.tanbox
 }
 
+input[type='text'] {
+	padding: (@base*-.5) 1em;
+}
+
 .tan_box {
-	.tanbox {}
+	background: lighten(@offwhite,10%);
+}
+.tanbox form {
+	margin-left: 2em;
 }
 
 .blog-bar {
-	background-color:@darkwhite;
+	background-color:@offwhite;
 }
 
 img.attachment-cta-bg.wp-post-image {
@@ -265,7 +270,9 @@ img.attachment-cta-bg.wp-post-image {
 }
 // Call to action ends here
 
-.social-links {font-size: 1rem;}
+.social-links {
+	font-size: 1em;
+}
 
 // BODY TEXT
 p {
@@ -276,6 +283,13 @@ p {
 	}
 }
 
+.underline:after {
+	content:'';
+	width:100%;
+	display: block;
+	border-bottom: 2px solid @gray;
+	margin-bottom:(@base*0.5);
+}
 // SEPARATOR/DIVIDER RULES (HR etc.)
 hr {
 	border:5px solid @darkwhite; 
@@ -340,9 +354,19 @@ ivycat-post {padding:0em 1em;}
 
  // left padding for sidebar page and post content
  #content .wrap .eightcol .page,  #content .wrap .eightcol .post {
- 	margin: 30px 1rem 0 2rem;
+ 	margin: (@base*3) 1em 0 2em;
  	padding: 0;
  }
+
+.attorney-profile {
+	margin-top: (@base*2);
+}
+.staff-profile {
+	margin-top: (@base*2);
+}
+article.lawyer-profile {
+	margin-left:0 !important;
+}
 
 
 /*********************
@@ -356,7 +380,7 @@ body {
 	font-family: @sans;
 	font-size: 16px;
 	line-height: 2;
-	color: #565656;
+	color: @text;
 }
 
 
@@ -399,12 +423,11 @@ ________________________________________________________________________*/
 	article {
 		section > div.sixcol:nth-child(odd) { float:right; }
 		section > div.sixcol:nth-child(even) { margin-left: 0; clear: both; }
-		div.fourcol { width: 30.5%; }
+		div.fourcol { width: 100%; float:left; }
 		div.fourcol:nth-child(3n+2) { //the leftmost columns of the staff section
-			margin-left: 0; clear: both;
+			margin-left:0;
 		}
 		div.fourcol:nth-child(3n+4) { // the rightmost columns of the staff section
-			float:right;
 		}
 	} //article
 }
@@ -477,6 +500,7 @@ a, a:visited {
 	/* on hover */
 	&:hover, &:focus {
 		color: @link-hover;
+		text-decoration: underline;
 	}
 
 	/* on click */
@@ -525,12 +549,11 @@ h1, .h1 {
 
 h1.page-title { margin: 1rem 0 0 0; }
 h2, .h2 { //page/single post titles
-	line-height: 0;
+	line-height: 1;
 	color: @darkbrown;
 	font-size: 2em; //36px Garamond
 	font-weight: 400;
 	margin: (@base*2) 0 0 0;
-	text-decoration: underline;
 }
 .home h2 {
 	text-decoration: none;
@@ -539,11 +562,11 @@ h2, .h2 { //page/single post titles
 
 h3, .h3 { //uppercase subhead font
 	font-weight: 700;
-	font-size: 1.16667rem;
-	line-height: 1.1em;
+	font-size: 1.16667em;
+	line-height: 1em;
 	color: @darkbrown;
 	text-transform: uppercase;
-	margin: 0.5rem 0 0.25rem 0;
+	margin: (@base*0.5) 0 0 0;
 }
 
 h4, .h4 {
@@ -668,20 +691,45 @@ and more scalable.
 		}
 	}
 }
-#content article{
+#content article {
 	padding: 0;
 	margin: (@base*3) 1em 0 2em;
-	h2.section-title{
+	h2.section-title {
 		padding:0;
 		margin: 0; //remove indent as the article tag indents already
 		text-align: center;
 	}
 } //push the content below the logo on non-overlapping pages
 #content .tanbox article, #content .blog-bar article {
-	margin: 30px 1rem 0 1rem;
+	margin: (@base*2) 1rem 0;
 }
 
-.home #content article{margin-top: 0;} // logo overlaps content on these pages
+.home #content article{
+	margin-top: 0;
+} // logo overlaps content on these pages
+
+.article-header .threecol {
+	margin-left: 0;
+}
+
+.attorney-byline {
+	&:before, &:after {
+		content:'';
+		width:100%;
+		display: block;
+		border-bottom: 2px solid @darkred;
+	}
+	p {
+		padding: 0.5em 0;
+		margin: 0;
+		background: lighten(@offwhite,10%);
+		color: @darkred;
+	}
+}
+
+.entry-header {
+	margin-bottom: (@base*0.5);
+}
 
 .hentry {
 
@@ -712,7 +760,7 @@ and more scalable.
 
 	/* post meta */
 	.byline {
-		color: #999;
+		color: @gray;
 		p {
 			display: inline-block;
 			float: right;
@@ -753,10 +801,10 @@ and more scalable.
 
 		blockquote {
 			margin: .5rem 0;
-			background: tan;
+			background: @offwhite;
 			border: 5px white solid;
 			padding: 0 1rem;
-			box-shadow: 5px 3px 5px 0px #000;
+			box-shadow: 5px 3px 5px 0px rgba(0,0,0,0.5);
 			&:before {}
 
 		}
@@ -839,6 +887,17 @@ pre {
 		.size-medium {}
 		.size-thumbnail {}
 
+.page-template-page-results-php #content article {
+	border-bottom: 4px solid @offwhite;
+	margin-top: (@base*2);
+	padding-bottom: @base;
+	&:last-child {
+		border-bottom: none;
+	}
+	&:first-child p {
+		font-size: 1.2em;
+	}
+}
 
 /******************************************************************
 09. PAGE NAVI STYLES
@@ -1061,7 +1120,7 @@ pre {
 
 			time {
 				float: right;
-
+				font-size: 0.2em;
 				a {
 					color: #999;
 					text-decoration: none;
@@ -1273,8 +1332,10 @@ pre {
 .sidebar {
 	padding: 0 2em; //left and right padding for mobile
 	margin-top: (@base*3) !important;
+	.widget {
+		margin-bottom: (@base*2);
+	}
 }
-.widgettitle {}
 h3{}
 ul {
 	li {
@@ -1305,6 +1366,9 @@ footer.footer { // footer (and footer nav) formatting
 	clear: both;
 	background-color: @darkred;
 	color: @white;
+	h3 {
+		font-size: 1.2em !important;
+	}
 	nav { 
 		padding: 2rem 2rem;
 	} //for mobile, left and right padding for the navigation (for the sides of the page)
@@ -1340,10 +1404,10 @@ footer.footer { // footer (and footer nav) formatting
 		.textwidget p {	}
 		.textwidget { //Left column Footer widget
 			color: @white;
-			font-size: 1rem;
+			font-size: 1em;
 			line-height: 1.3;
 			p {
-				font-size: .875rem; //14px
+				font-size: .875em; //14px
 			} //p
 		} //.textwidget
 		h3 {
@@ -1354,6 +1418,9 @@ footer.footer { // footer (and footer nav) formatting
 		a { //this only affects non-nav footer links
 			color: @link-color;
 			text-decoration: underline;
+			&:hover {
+				color: @link-hover;
+			}
 		} // a
 	} // .wrap
 
@@ -1398,7 +1465,7 @@ footer.footer { // footer (and footer nav) formatting
 	} // ul.footernav
 		.footer-widgets-right {
 		[class^="icon-"], [class*=" icon-"] { //icons in the footer widgets
-			font-size: 2.5rem;
+			font-size: 2em;
 		}
 		a {
 			text-decoration: none;
@@ -1408,9 +1475,9 @@ footer.footer { // footer (and footer nav) formatting
 	} //.footer-widgets-right
 	.copyright {
 		margin-top: @base;
-		margin-bottom: 1rem;
+		margin-bottom: @base;
 		font-size: 0.714286rem !important; // 10px/14px
-		color: @grey !important;
+		color: @offwhite !important;
 	}
 } //  footer.footer
 
@@ -1439,17 +1506,32 @@ p.source-org {
 
 
 //RSB FORM ELEMENTS
-input.wpcf7-submit {
-	color: rgb(255, 255, 255);
-	background-color: rgb(198, 30, 2);
-	border-color: rgb(198, 30, 2);
-	padding: 0.18rem 0.25rem;
-	vertical-align: top;
+.tanbox .wpcf7-submit {
+	&:extend(a .button1);
+}
+.screen-reader-text {
+	display: none;
+}
+.widget_search input[type='submit'] {
+	&:extend(a .button2);
+	width: 6em;
+	height:(@base*2);
+	font-size: 1em;
+	position: absolute;
+	top:(@base*0.55);
+	right:0.5em;
+	border: none;
+	border-bottom-left-radius: 0;
+	border-top-left-radius: 0;
+	box-shadow: none;
+	&:hover, &:focus, &:active {
+		color: @white;
+		background-color: darken(@gray, 20%);
+	}
 }
 
-footer .wpcf7-email {
-	float: left;
-	max-width: 66%;
+.widget_text input[type='submit'] {
+	&:extend(a .button2);
 }
 
 input[type=text],
@@ -1458,4 +1540,7 @@ input[type=url],
 input[type=tel],
 textarea {
 	width: 100%;
+	padding: (@base*0.5) 1em;
+	.border-radius(10px);
+	border: 2px solid @offwhite;
 }

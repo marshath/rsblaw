@@ -17,7 +17,7 @@
 				
 				<h1 class="archive-title"><?php echo $displayname; ?></h1>
 				
-				<div class="byline">
+				<div class="attorney-byline">
 					<p><em><?php echo $position;?></em>
 					<!-- .fivecol -->
 						<span class="social-links floatright">
@@ -26,7 +26,7 @@
 							<a href="<?=$facebook?>" rel="external">Facebook</a> |
 							<a href="<?=$twitter?>" rel="external">Twitter</a> |
 							<a href="<?=$linkedin?>" rel="external">LinkedIn</a> |
-							<a href="<?=$googleplus?>" rel="external">Google Plus</a>
+							<a href="<?=$googleplus?>" rel="external">Google+</a>
 						</span><!-- .social-links-->
 					</p>
 				</div>
