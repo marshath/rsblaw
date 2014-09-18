@@ -594,6 +594,9 @@ p.excerpt {
 *********************/
 
 .header {
+	background-color: @darkbrown;
+	background-image: -webkit-linear-gradient(to bottom, rgba(170,170,170,1) 0%,rgba(23,11,8,1) 1%,rgba(25,11,10,1) 17%,rgba(46,22,18,1) 35%,rgba(64,30,25,1) 65%,rgba(65,30,25,1) 100%); //two background images: gradient beneath logo
+	background-image: -moz-linear-gradient(to bottom, rgba(170,170,170,1) 0%,rgba(23,11,8,1) 1%,rgba(25,11,10,1) 17%,rgba(46,22,18,1) 35%,rgba(64,30,25,1) 65%,rgba(65,30,25,1) 100%); //two background images: gradient beneath logo
 	background-image: linear-gradient(to bottom, rgba(170,170,170,1) 0%,rgba(23,11,8,1) 1%,rgba(25,11,10,1) 17%,rgba(46,22,18,1) 35%,rgba(64,30,25,1) 65%,rgba(65,30,25,1) 100%); //two background images: gradient beneath logo
 	background-position: left top;
 	background-repeat: no-repeat;
@@ -1016,6 +1019,10 @@ pre {
 /******************************************************************
 10. COMMENT STYLES
 ******************************************************************/
+
+.disqus {
+	margin-top: (@base*2);
+}
 
 /* h3 comment title */
 #comments {

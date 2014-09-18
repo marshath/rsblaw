@@ -146,17 +146,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/favicon.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 5109,
-		"inputAbbreviatedPath": "\/favicon.png",
-		"outputAbbreviatedPath": "\/favicon.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/footer.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -285,17 +274,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/library\/images\/custom-post-icon.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 3573,
-		"inputAbbreviatedPath": "\/library\/images\/custom-post-icon.png",
-		"outputAbbreviatedPath": "\/library\/images\/custom-post-icon.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/library\/images\/icon-articles.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -336,17 +314,6 @@
 		"initialSize": 15693,
 		"inputAbbreviatedPath": "\/library\/images\/login-logo.png",
 		"outputAbbreviatedPath": "\/library\/images\/login-logo.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/library\/images\/rsbc-logo.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 34691,
-		"inputAbbreviatedPath": "\/library\/images\/rsbc-logo.png",
-		"outputAbbreviatedPath": "\/library\/images\/rsbc-logo.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

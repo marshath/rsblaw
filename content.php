@@ -62,5 +62,9 @@
 				) ); ?>
 				
 			</div> <!-- .entry-content -->
-
+			
+			<div class="disqus">
+				<?php comments_template(); ?>
+			</div>
+			
 		</article> <!-- #post-## -->
