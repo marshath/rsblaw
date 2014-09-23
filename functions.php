@@ -86,48 +86,14 @@ you like. Enjoy!
 
 // Sidebars & Widgetizes Areas
 function bones_register_sidebars() {
-	register_sidebar(array(
-					 'name' => __('Sidebar 1', 'rsblawtheme'),
-					 'id' => 'sidebar1',
-					 'description' => __('Default page sidebar', 'rsblawtheme'),
+register_sidebar( array(
+					 'name'          => __( 'Firm Overview Sidebar', 'rsblawtheme' ),
+					 'id'            => 'firm-overview-sidebar',
+					 'description'   => __( 'Sidebar for the Firm Overview page', 'rsblawtheme' ),
 					 'before_widget' => '<div id="%1$s" class="widget %2$s">',
-					 'after_widget' => '</div>',
-					 'before_title' => '<h4 class="widgettitle">',
-					 'after_title' => '</h4>',
-					 ));
-	register_sidebar( array(
-					 'name'          => __( 'Blog Archive Sidebar', 'rsblawtheme' ),
-					 'id'            => 'blog-archive-sidebar',
-					 'description'   => __( 'Sidebar that appears on the right on the blog archive pages.', 'rsblawtheme' ),
-					 'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-					 'after_widget'  => '</aside>',
+					 'after_widget'  => '</div>',
 					 'before_title'  => '<h4 class="widget-title">',
 					 'after_title'   => '</h4>',
-					 ) );
-	register_sidebar( array(
-					 'name'          => __( 'Single Post Sidebar', 'rsblawtheme' ),
-					 'id'            => 'single-sidebar',
-					 'description'   => __( 'Sidebar that appears on the right of single posts & pages except for those that have their own more specific sidebar (one of the other widget areas on the Widgets page.', 'rsblawtheme' ),
-					 'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-					 'after_widget'  => '</aside>',
-					 'before_title'  => '<h4 class="widget-title">',
-					 'after_title'   => '</h4>',
-					 ) );
-	register_sidebar(array(
-					 'name'=>'Footer Widgets Left',
-					 'id' => 'footer-widgets-left',
-					 'before_widget' => '<div>',
-					 'after_widget' => '</div>',
-					 'before_title' => 'h4 class=hidden',
-					 'after_title' => '</h4>',
-					 ));
-	register_sidebar(array(
-					 'name'=>'Footer Widgets Right',
-					 'id' => 'footer-widgets-right',
-					 'before_widget' => '<div class="footer-widgets-right">',
-					 'after_widget' => '</div>',
-					 'before_title' => '<h4 class=hidden>',
-					 'after_title' => '</h4>',
 					 ));
 register_sidebar( array(
 					 'name'          => __( 'Practice Areas Sidebar', 'rsblawtheme' ),
@@ -147,6 +113,24 @@ register_sidebar( array(
 					 'before_title'  => '<h4 class="widget-title">',
 					 'after_title'   => '</h4>',
 					 ));
+	register_sidebar( array(
+					 'name'          => __( 'Blog Archive Sidebar', 'rsblawtheme' ),
+					 'id'            => 'blog-archive-sidebar',
+					 'description'   => __( 'Sidebar that appears on the right on the blog archive pages.', 'rsblawtheme' ),
+					 'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+					 'after_widget'  => '</aside>',
+					 'before_title'  => '<h4 class="widget-title">',
+					 'after_title'   => '</h4>',
+					 ) );
+	register_sidebar( array(
+					 'name'          => __( 'Single Post Sidebar', 'rsblawtheme' ),
+					 'id'            => 'single-sidebar',
+					 'description'   => __( 'Sidebar that appears on the right of single posts & pages except for those that have their own more specific sidebar (one of the other widget areas on the Widgets page.', 'rsblawtheme' ),
+					 'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+					 'after_widget'  => '</aside>',
+					 'before_title'  => '<h4 class="widget-title">',
+					 'after_title'   => '</h4>',
+					 ) );
 register_sidebar( array(
 					 'name'          => __( 'Contact Sidebar', 'rsblawtheme' ),
 					 'id'            => 'contact-sidebar',
@@ -156,23 +140,21 @@ register_sidebar( array(
 					 'before_title'  => '<h4 class="widget-title">',
 					 'after_title'   => '</h4>',
 					 ));
-register_sidebar( array(
-					 'name'          => __( 'Firm Overview Sidebar', 'rsblawtheme' ),
-					 'id'            => 'firm-overview-sidebar',
-					 'description'   => __( 'Sidebar for the Firm Overview page', 'rsblawtheme' ),
-					 'before_widget' => '<div id="%1$s" class="widget %2$s">',
-					 'after_widget'  => '</div>',
-					 'before_title'  => '<h4 class="widget-title">',
-					 'after_title'   => '</h4>',
+	register_sidebar(array(
+					 'name'=>'Footer Widgets Left',
+					 'id' => 'footer-widgets-left',
+					 'before_widget' => '<div>',
+					 'after_widget' => '</div>',
+					 'before_title' => 'h4 class=hidden',
+					 'after_title' => '</h4>',
 					 ));
-register_sidebar( array(
-					 'name'          => __( 'Who We Are Sidebar', 'rsblawtheme' ),
-					 'id'            => 'who-we-are-sidebar',
-					 'description'   => __( 'Sidebar for the Who We Are page', 'rsblawtheme' ),
-					 'before_widget' => '<div id="%1$s" class="widget %2$s">',
-					 'after_widget'  => '</div>',
-					 'before_title'  => '<h4 class="widget-title">',
-					 'after_title'   => '</h4>',
+	register_sidebar(array(
+					 'name'=>'Footer Widgets Right',
+					 'id' => 'footer-widgets-right',
+					 'before_widget' => '<div class="footer-widgets-right">',
+					 'after_widget' => '</div>',
+					 'before_title' => '<h4 class=hidden>',
+					 'after_title' => '</h4>',
 					 ));
 
 } // don't remove this bracket!

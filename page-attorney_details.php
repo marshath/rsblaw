@@ -19,13 +19,11 @@ get_header();
 			$nicename = get_the_author_meta ('user_nicename', $id); //gets the slug for the user account, which should match the slug on the page.
 			$bio =   get_the_author_meta ('description', $id); //use this as the "excerpt" preceding the_content
 			$email = get_the_author_meta ('user_email', $id);
-			$avvo = "http://www.avvo.com/attorneys/" . get_the_author_meta ('avvo', $id);
-			$facebook = "http://www.facebook.com/" . get_the_author_meta ('facebook', $id);
-			$twitter = "http://www.twitter.com/" . get_the_author_meta ('twitter', $id);
-			$linkedin = "http://www.linkedin.com/in/" . get_the_author_meta ('linkedin', $id);
-			$googleplus = "http://www.googleplus.com/";
-			$gslug= (string)get_the_author_meta ('googleplus', $id);
-			$googleplus = $googleplus . $gslug;
+			$avvo = get_the_author_meta ('avvo', $id);
+			$facebook = get_the_author_meta ('facebook', $id);
+			$twitter = get_the_author_meta ('twitter', $id);
+			$linkedin = get_the_author_meta ('linkedin', $id);
+			$googleplus = get_the_author_meta ('googleplus', $id);
 			$position = get_field('position');
 			$user_slug = get_the_author_meta( 'user_nicename', $id );
 			$tag_slug= $user_slug . "-tag";
@@ -49,8 +47,8 @@ get_header();
 				// 'post_status'            => 'published',
 				'pagination'             => 'true',
 				'paged'                  => '1',
-				'posts_per_page'         => '5',
-				'posts_per_archive_page' => '5',
+				'posts_per_page'         => '2',
+				'posts_per_archive_page' => '2',
 				'order'                  => 'DESC',
 				'orderby'                => 'date',
 				'tag'               => $tag_slug
@@ -71,7 +69,7 @@ get_header();
 			} //endif
 			?>
 			<div class="clearfix cushion"></div>
-			<div class="sixcol first tan_box">
+			<div class="sixcol first tan_box2">
 				<h2 class="section-title"><?php echo $displayname; ?>'s Amazing Results</h2>
 
 				<?php /****************************************************
@@ -83,8 +81,8 @@ get_header();
 					'post_type'              => 'rsb_result',
 					'pagination'             => true,
 					'paged'                  => '1',
-					'posts_per_page'         => '5',
-					'posts_per_archive_page' => '10',
+					'posts_per_page'         => '2',
+					'posts_per_archive_page' => '2',
 					'tag'               => $tag_slug //match the page's manually assigned user slug to the manually assigned slug for rsb_result posts.
 				);
 				
@@ -113,8 +111,8 @@ get_header();
 					'author_name' => $user_slug,
 					'pagination'             => true,
 					'paged'                  => '1',
-					'posts_per_page'         => '5',
-					'posts_per_archive_page' => '10'
+					'posts_per_page'         => '3',
+					'posts_per_archive_page' => '3'
 				);
 				// The Query
 				$posts = new WP_Query( $args );
@@ -122,7 +120,8 @@ get_header();
 				if ( $posts->have_posts() ) { ?>
 					<?php while ( $posts->have_posts() ) {
 						$posts->the_post();
-					 	include(locate_template('content.php'));
+					 	echo '<article><header>'; the_title( '<h3 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h3>' ); echo '</header>';
+					 	echo '<div class="entry-summary">'; the_excerpt(); echo '</div></article>';
 					} //endwhile
 				} //endif //end results loop ?>
 				

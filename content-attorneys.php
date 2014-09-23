@@ -16,12 +16,13 @@
 		         <?php the_post_thumbnail('portrait-med'); ?>
 		      </div> <!-- .fourcol .first -->
 		      
-		      <h3 class="archive-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-		      
-		      <section class="entry-content clearfix">
-		         <?php the_content(); ?>
-		         <p><a href="<?php the_permalink(); ?>"><span class="secondary-button"><?php the_title(); ?>'s profile &raquo;</span></a></p>
-		      </section> <!-- end article section -->
+		      <div class="eightcol">
+			      <h3 class="archive-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+			      <section class="entry-content clearfix">
+			         <?php the_content(); ?>
+			         <p><a href="<?php the_permalink(); ?>"><span class="button2"><?php the_title(); ?>'s profile &raquo;</span></a></p>
+			      </section> <!-- end article section -->
+		      </div>
 		      
 		   </article>
 		   

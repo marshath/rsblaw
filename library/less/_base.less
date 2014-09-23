@@ -36,7 +36,9 @@ Don't over-style here--everything in this file will be loaded by mobile devices.
 #main ul > li {
 	margin-left: 2em;
 }
-
+.article-header h1 {
+	margin-top: 0;
+}
 //FIXING FONT SIZES FOR SPECIFIC ELEMENTS ENDS HERE
 mark {
 	background-color: transparent;
@@ -228,6 +230,9 @@ article {
 }
 //, #text-6 > div:nth-child(2)
 
+#sidebar-single aside ul, #sidebar-archive aside ul {
+	margin: 0;
+}
 
 // FIRST P OF PRACTICE AREAS PAGE TEMPLATE IN ALL CAPS
 .page-template-page-practice_areas-php {
@@ -253,7 +258,7 @@ input[type='text'] {
 	padding: (@base*-.5) 1em;
 }
 
-.tan_box {
+.tan_box, .tan_box2 {
 	background: lighten(@offwhite,10%);
 }
 .tanbox form {
@@ -703,7 +708,7 @@ and more scalable.
 		text-align: center;
 	}
 } //push the content below the logo on non-overlapping pages
-#content .tanbox article, #content .blog-bar article {
+#content .tanbox article, #content .tan_box2 article, #content .blog-bar article {
 	margin: (@base*2) 1rem 0;
 }
 

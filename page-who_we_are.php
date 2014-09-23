@@ -11,7 +11,6 @@ Template Name: Who We Are (Staff Profiles Page)
 				<?php if (have_posts()) {
 					while (have_posts()) {
 						the_post(); ?>
-						
 				<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
 				
 					<header class="article-header">
@@ -21,7 +20,7 @@ Template Name: Who We Are (Staff Profiles Page)
 					<section class="entry-content clearfix" itemprop="articleBody">
 						<?php the_content(); ?>
 					</section> <!-- end article section -->
-		
+					
 					<section class="clearfix attorney-profile"> <!-- closes after the attorney loop -->
 							
 					<?php } //endwhile

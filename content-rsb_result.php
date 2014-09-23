@@ -7,9 +7,9 @@
  * @since RSBlaw.net 1.0
  */
 ?>
-		<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
+		<article>
 		
-		    <header class="article-header">
+		    <header>
 		        <?php if ( is_single() ) { ?>
 		        
 		        	<h1 class="entry-title single-title" itemprop="headline"><?php the_title(); ?></h1>
