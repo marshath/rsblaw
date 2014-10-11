@@ -19,7 +19,7 @@
 		      <div class="eightcol">
 			      <h3 class="archive-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 			      <section class="entry-content clearfix">
-			         <?php the_content(); ?>
+			         <?php the_field('short_bio'); ?>
 			         <p><a href="<?php the_permalink(); ?>"><span class="button2"><?php the_title(); ?>'s profile &raquo;</span></a></p>
 			      </section> <!-- end article section -->
 		      </div>
