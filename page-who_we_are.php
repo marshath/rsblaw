@@ -32,7 +32,8 @@ Template Name: Who We Are (Staff Profiles Page)
 						<?php // ************ ATTORNEYS LOOP STARTS HERE ************
 						$args = array (
 			               'post_parent'            => '23',
-			               'post_type'              => 'page'
+			               'post_type'              => 'page',
+			               'order'            		=> 'asc'
 			            );
 						// The Query
 						$legal_query = new WP_Query( $args );
