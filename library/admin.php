@@ -16,6 +16,61 @@ Digging into WP - http://digwp.com/2010/10/customize-wordpress-dashboard/
 */
 
 
+/************* ADMIN MENU & DASHBOARD *****************/
+
+// REMOVE ADMIN DASHBOARD WIDGETS
+add_action('admin_init', 'remove_dashboard_meta');
+function remove_dashboard_meta() {
+	remove_meta_box('dashboard_primary', 'dashboard', 'side'); // wordpress news
+	// remove_meta_box('dashboard_incoming_links', 'dashboard', 'normal'); // incoming links
+	remove_meta_box('dashboard_quick_press', 'dashboard', 'side'); // quick press
+	// remove_meta_box('dashboard_recent_drafts', 'dashboard', 'side'); // drafts
+	// remove_meta_box('dashboard_recent_comments', 'dashboard', 'normal'); // comments
+	// remove_meta_box('dashboard_activity', 'dashboard', 'normal'); // recent activity
+} 
+
+// REMOVE WELCOME PANEL
+remove_action('welcome_panel', 'wp_welcome_panel');
+
+// REMOVE ADMIN SIDEBAR MENU ITEMS
+add_action('admin_menu', 'my_remove_menu_pages');
+function my_remove_menu_pages() {
+	// remove_menu_page('index.php'); // dashboard
+	// remove_menu_page('edit.php'); // posts
+	// remove_menu_page('edit-comments.php'); // comments
+	// remove_menu_page('themes.php'); // appearance
+	remove_menu_page('plugins.php'); // plugins
+	// remove_menu_page('users.php'); //users
+	remove_menu_page('tools.php'); //tools
+	// remove_menu_page('options-general.php'); // settings
+	remove_menu_page('wpseo_dashboard'); // Yoast SEO
+}
+
+// REMOVE APPEARANCE SUBMENU ITEMS
+add_action('admin_init', 'remove_theme_submenus');
+function remove_theme_submenus() {
+    global $submenu; 
+    unset($submenu['themes.php'][5]); // appearance > themes
+    unset($submenu['themes.php'][6]); // appearance > customize
+    unset($submenu['themes.php'][20]); // appearance > background
+}
+
+// REMOVE ADMIN BAR MENU ITEMS
+add_action('wp_before_admin_bar_render', 'my_remove_admin_bar_links');
+function my_remove_admin_bar_links() {
+	global $wp_admin_bar;
+	$wp_admin_bar->remove_menu('themes'); // view sites > themes
+	$wp_admin_bar->remove_menu('customize'); // view sites > customize
+	$wp_admin_bar->remove_menu('widgets'); // view sites > widgets
+	$wp_admin_bar->remove_menu('menus'); // view sites > menus
+	$wp_admin_bar->remove_menu('customize-background'); // view sites > background
+	$wp_admin_bar->remove_menu('updates'); // updates
+	$wp_admin_bar->remove_menu('comments'); // comments
+	$wp_admin_bar->remove_menu('new-content'); // new post
+	// $wp_admin_bar->remove_menu('edit'); // edit post 
+	$wp_admin_bar->remove_menu('wpseo-menu'); // Yoast SEO 
+}
+
 
 /************* CUSTOM LOGIN PAGE *****************/
 

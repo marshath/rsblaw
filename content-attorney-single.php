@@ -59,7 +59,6 @@
 			</header> <!-- end article header -->
 		
 			<section class="ninecol entry-content clearfix">
-				<p class="excerpt"><?php echo $bio; ?></p>
 				<p><?php the_content(); ?></p>
 			</section> <!-- end article section -->
 			

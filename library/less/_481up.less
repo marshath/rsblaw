@@ -93,11 +93,15 @@ POSTS & CONTENT STYLES
 } /* end .entry-content */
 
 
+/*********************
+FOOTER STYLES
+*********************/
 footer.footer {
 	nav {
 		li {
 			a {
 				&:hover, &:focus {
+					text-decoration: underline;
 				} //end hover/focus
 			} //end a
 			&:first-child {}
@@ -116,7 +120,9 @@ footer.footer {
 				li {
 					a {
 						&:hover,
-						&:focus {}
+						&:focus {
+							text-decoration: underline;
+						}
 						&:link {}
 					} /* end a */
 					&:first-child {}

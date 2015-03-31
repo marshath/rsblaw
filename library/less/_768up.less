@@ -7,7 +7,8 @@ For iPads, other tablets, and desktops.
 ******************************************************************/
 .slogan { //the Emergency phone number in the top right on desktop+
     display: inline-block;
-    font-size: 0.85em;
+    font-size: 1em;
+    font-style: italic;
     margin: 0;
     position: absolute;
     right: 0.8em;
@@ -38,6 +39,9 @@ header {
 	} //nav
 } //end header nav
 
+.home-link {
+	top: 36px;
+}
 //Give the attorney image some space on the right
 .page-template-page-attorney_details-php img.attachment-portrait-medium {
 	padding-right: 2rem;
@@ -56,22 +60,25 @@ header {
 	/* z-index: -1; */
 	position: relative;
 	overflow: hidden;
-	min-height: 294px;
+	min-height: 400px;
 }
-.cta-textbox{
+.cta-textbox {
+	width:100%;
 	position:absolute;
-	right:0;
-	background: rgba(226,223,204,0.9);
-	max-width: 49%;
-	top: 1.25%;
-	border-right: 0px;
-	box-shadow: -8px 8px 8px rgba(0,0,0,0.65);
+	background: rgba(0,0,0,0.65);
+	border:none;
+	top:237px;
+	text-align:center;
+	text-shadow: 2px 2px 1px black;
 	h1 {
 		font-size: 1.65rem;
-		text-shadow: 1px 1px 2px @white;
+		color:@white;
 	}
 	p {
+		width:80%;
+		margin:0 auto;
 		font-size: 0.88rem;
+		color:@white;
 	}
 }
 
@@ -151,15 +158,17 @@ header {
 				color: @white;
 				border-width: 1px;
 				border-color: transparent;
-				border-radius: 0.75rem;
 				background-color: transparent;
-				color: @white;
+				transition:background-color 0.5s ease;
 				&:hover, &:focus {
-					color: @offwhite;
+					background-color: #f4f3ed;
+					color: @black;
+					transition:background-color 0s ease;
 				}
 				&:active, &:focus, &:hover {
-					border-color: rgba(255, 255, 255, 0.35);
+					border-color: rgba(255, 255, 255, 1);
 					border-style: solid;
+					border-radius:0;
 				}
 			} //a
 

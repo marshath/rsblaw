@@ -240,11 +240,13 @@ a .button-secondary {
   margin-bottom: 20px;
   line-height: 21px;
   -webkit-box-shadow: 0px 1px 4px -1px #191919;
+  -moz-box-shadow: 0px 1px 4px -1px #191919;
   box-shadow: 0px 1px 4px -1px #191919;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
   border: 1px solid;
+  transition: text-shadow 0.15s ease;
 }
 .button_base:after,
 .button_base:visited:after {
@@ -282,6 +284,7 @@ a .button:active {
   background-image: -o-linear-gradient(top, #c61e02, #ed5d06);
   background-image: linear-gradient(to bottom, #c61e02, #ed5d06);
   color: #ffffff;
+  text-shadow: 2px 3px rgba(0, 0, 0, 0.4);
 }
 a .button1:visited,
 a .primary-button:visited,
@@ -312,7 +315,8 @@ a .button2:active,
 a .secondary-button:active,
 a .button-secondary:active {
   color: #ffffff;
-  background-color: #56574f;
+  background-color: #7e7f73;
+  text-shadow: 2px 3px rgba(0, 0, 0, 0.4);
 }
 a .button2:link,
 a .secondary-button:link,
@@ -443,6 +447,9 @@ POSTS & CONTENT STYLES
   clear: both;
 }
 /* end .entry-content */
+/*********************
+FOOTER STYLES
+*********************/
 footer.footer {
   /* end nav */
 }
@@ -460,6 +467,10 @@ footer.footer nav li {
 			http://www.alistapart.com/articles/organizing-mobile/
 			*/
 }
+footer.footer nav li a:hover,
+footer.footer nav li a:focus {
+  text-decoration: underline;
+}
 footer.footer nav li ul.sub-menu,
 footer.footer nav li ul.children {
   background-color: transparent;
@@ -468,6 +479,12 @@ footer.footer nav li ul.children {
 footer.footer nav li ul.sub-menu li,
 footer.footer nav li ul.children li {
   /* end a */
+}
+footer.footer nav li ul.sub-menu li a:hover,
+footer.footer nav li ul.children li a:hover,
+footer.footer nav li ul.sub-menu li a:focus,
+footer.footer nav li ul.children li a:focus {
+  text-decoration: underline;
 }
 /* import grid */
 /******************************************************************
@@ -581,7 +598,8 @@ For iPads, other tablets, and desktops.
 ******************************************************************/
 .slogan {
   display: inline-block;
-  font-size: 0.85em;
+  font-size: 1em;
+  font-style: italic;
   margin: 0;
   position: absolute;
   right: 0.8em;
@@ -605,6 +623,9 @@ header .abovenav :after {
 .header {
   background-size: 100% 106px;
 }
+.home-link {
+  top: 36px;
+}
 .page-template-page-attorney_details-php img.attachment-portrait-medium {
   padding-right: 2rem;
 }
@@ -621,23 +642,26 @@ header .abovenav :after {
   /* z-index: -1; */
   position: relative;
   overflow: hidden;
-  min-height: 294px;
+  min-height: 400px;
 }
 .cta-textbox {
+  width: 100%;
   position: absolute;
-  right: 0;
-  background: rgba(226, 223, 204, 0.9);
-  max-width: 49%;
-  top: 1.25%;
-  border-right: 0px;
-  box-shadow: -8px 8px 8px rgba(0, 0, 0, 0.65);
+  background: rgba(0, 0, 0, 0.65);
+  border: none;
+  top: 237px;
+  text-align: center;
+  text-shadow: 2px 2px 1px black;
 }
 .cta-textbox h1 {
   font-size: 1.65rem;
-  text-shadow: 1px 1px 2px #ffffff;
+  color: #ffffff;
 }
 .cta-textbox p {
+  width: 80%;
+  margin: 0 auto;
   font-size: 0.88rem;
+  color: #ffffff;
 }
 vr-l {
   border-left: 1px solid #191919;
@@ -699,21 +723,24 @@ header nav ul.nav li {
 }
 header nav ul.nav li a {
   padding: 0 0.5rem 0 0.5rem;
+  color: #ffffff;
   border-width: 1px;
   border-color: transparent;
-  border-radius: 0.75rem;
   background-color: transparent;
-  color: #ffffff;
+  transition: background-color 0.5s ease;
 }
 header nav ul.nav li a:hover,
 header nav ul.nav li a:focus {
-  color: #e2dfcc;
+  background-color: #f4f3ed;
+  color: #191919;
+  transition: background-color 0s ease;
 }
 header nav ul.nav li a:active,
 header nav ul.nav li a:focus,
 header nav ul.nav li a:hover {
-  border-color: rgba(255, 255, 255, 0.35);
+  border-color: #ffffff;
   border-style: solid;
+  border-radius: 0;
 }
 header nav ul.nav li ul.sub-menu,
 header nav ul.nav li ul.children {
@@ -931,11 +958,17 @@ be seen on the Desktop.
 
 ******************************************************************/
 .cta-container {
-  min-height: 396px;
+  min-height: 540px;
+  -webkit-border-bottom-right-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  -moz-border-radius-bottomright: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  overflow: hidden;
 }
 .cta-textbox {
-  top: 1.25%;
-  max-width: 55%;
+  top: 340px;
 }
 .cta-textbox h1 {
   font-size: 2.4rem;
@@ -949,26 +982,3 @@ be seen on the Desktop.
   position: static;
   clear: both;
 }
-/* 
-you can call the larger styles if you want, but there's really no need 
-*/
-/******************************************************************
-ADDITIONAL IE FIXES
-These fixes are now ONLY seen by IE, so you don't have to worry
-about using prefixes, although it's best practice. For more info
-on using Modernizr classes, check out this link:
-http://www.modernizr.com/docs/
-******************************************************************/
-/*
-For example, you can use something like:
-
-.no-textshadow .class { ... }
-
-You can also target specific versions by using the classes applied to
-the html element. These can sometimes change, so take a look inside the
-header.php file to see what they are:
-
-
-.lt-ie8 .class { ... }
-
-*/

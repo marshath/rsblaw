@@ -33,7 +33,7 @@ Template Name: Who We Are (Staff Profiles Page)
 						$args = array (
 			               'post_parent'            => '23',
 			               'post_type'              => 'page',
-			               'order'            		=> 'asc'
+			               'order'            		=> 'desc'
 			            );
 						// The Query
 						$legal_query = new WP_Query( $args );

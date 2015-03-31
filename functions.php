@@ -44,8 +44,7 @@ require_once('library/admin.php'); // this comes turned off by default
 define( 'ACF_LITE', true ); // hide the ACF menu item in the left sidebar of the Admin Area
 // include_once('library/advanced-custom-fields/acf.php'); // load ACF from the theme's library folder
 
-	/************* THUMBNAIL SIZE OPTIONS *************/
-
+/************* THUMBNAIL SIZE OPTIONS *************/
 // Thumbnail sizes
 	add_image_size( 'cta-bg', 1020, 398, true );
 	add_image_size( 'landscape-wide', 800, 300, true );

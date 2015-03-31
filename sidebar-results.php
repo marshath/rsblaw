@@ -4,5 +4,9 @@
 		<?php dynamic_sidebar( 'results-sidebar' ); ?>
 	<?php } else { ?>
 	<?php } //endif; ?>
+			
+	<?php /******* INSERT PRACTICE AREA CALLOUTS *******/
+		get_template_part ('content' , 'practice_area_callouts');
+	?>
 
 </div>

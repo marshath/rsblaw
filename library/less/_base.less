@@ -297,11 +297,11 @@ p {
 }
 // SEPARATOR/DIVIDER RULES (HR etc.)
 hr {
-	border:5px solid @darkwhite; 
+	border:2px dotted @darkwhite; 
 }
 .divider { 
 	display: inline; 
-	border-left: 5px solid @darkwhite; 
+	border-left: 2px dotted @darkwhite; 
 	padding-left: 0.3rem;
 	&.first{
 		border-left: none; 
@@ -410,7 +410,7 @@ ________________________________________________________________________*/
 		font-size: 2.2rem;
 		font-weight: 700;
 		margin: 1em 12.5% 0 12.5%;
-		border-bottom: 2px solid @tan;
+		border-bottom: 2px dotted @tan;
 		width: 75%;
 		text-align:center;
 		a {
@@ -608,6 +608,7 @@ p.excerpt {
 	background-size: 100% 151px; //size of header determines size of gradient background--
 	//logo is taller so that it overlaps the content area
 	background-attachment: scroll;
+	border-bottom: : 6px solid #8b8c80;
 	position: relative;
 	z-index: 10;
 	ul {
@@ -896,7 +897,7 @@ pre {
 		.size-thumbnail {}
 
 .page-template-page-results-php #content article {
-	border-bottom: 4px solid @offwhite;
+	border-bottom: 2px dotted @offwhite;
 	margin-top: (@base*2);
 	padding-bottom: @base;
 	&:last-child {

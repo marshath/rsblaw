@@ -14,12 +14,17 @@
 			<?php } ?>
 		
 			<header class="article-header">
-				<h1 class="page-title" itemprop="headline"><?php the_title(); ?></h1>
+				<h1 class="page-title" itemprop="headline"><?php the_title(); ?>RR</h1>
 			</header> <!-- end article header -->
 			
 			<section class="entry-content clearfix" itemprop="articleBody">
 				<?php the_content(); ?>
 			</section> <!-- end article section -->
+			
+			<?php /******* INSERT PRACTICE AREA CALLOUTS *******/
+			if ((is_page('home')) or (is_page('firm-overview'))) {
+				get_template_part ('content' , 'practice_area_callouts');
+			} ?>
 		
 			<?php // <footer class="article-footer"></footer> <!-- end article footer --> ?>
 		
