@@ -28,7 +28,7 @@
 				</div> <!-- center two columns end here -->
 
 				<!-- right-side footer widgets start here-->
-				<div class="threecol last">
+				<div class="threecol widget_search last">
 					<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer Widgets Right') ) { ?>
 					<?php } //endif ?>
 				</div> <!-- right-side footer widgets end here-->

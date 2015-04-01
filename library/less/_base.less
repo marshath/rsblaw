@@ -57,10 +57,6 @@ h2.section-title { //add left margins for section titles outside the article tag
 	width:46% !important;
 }
 
-.page-template-page-practice_areas-php .entry-content p:first-child {
-	font-size:1.2em;
-}
-
 /******************************************
 ICON FONT FROM ICOMOON STARTS HERE
 *******************************************/
@@ -226,6 +222,8 @@ article {
 	}
 	li {
 		margin-bottom: 1em;
+		font-size:0.9em;
+		line-height: 1.5em;
 	}
 }
 //, #text-6 > div:nth-child(2)
@@ -317,7 +315,7 @@ hr {
 }
 .vr-r {
     display: inline-block;
-    padding: 0 2rem 0 0;
+    padding: 0 1rem 0 0;
     max-width: 20rem;
     width: 48%;
 }
@@ -365,9 +363,16 @@ ivycat-post {padding:0em 1em;}
 
 .attorney-profile {
 	margin-top: (@base*2);
+	h3 {
+		font-size: 1.33em;
+		margin-bottom: @base;
+	}
 }
 .staff-profile {
 	margin-top: (@base*2);
+	h3 {
+		font-size: 1.33em;
+	}
 }
 article.lawyer-profile {
 	margin-left:0 !important;
@@ -383,7 +388,7 @@ html, body {
 }
 body {
 	font-family: @sans;
-	font-size: 16px;
+	font-size: 18px;
 	line-height: 2;
 	color: @text;
 }
@@ -581,7 +586,7 @@ h4, .h4 {
 }
 
 h5, .h5 {
-	font-size: 0.846rem;
+	font-size: 0.9rem;
 	line-height: 1.09rem;
 	text-transform: uppercase;
 	letter-spacing: 2px;
@@ -902,9 +907,6 @@ pre {
 	padding-bottom: @base;
 	&:last-child {
 		border-bottom: none;
-	}
-	&:first-child p {
-		font-size: 1.2em;
 	}
 }
 
@@ -1412,15 +1414,13 @@ footer.footer { // footer (and footer nav) formatting
 		} //margins on both sides for single-column footer
 		p {
 			color: @white;
-			font-size: 1rem;
 		}
-		.textwidget p {	}
 		.textwidget { //Left column Footer widget
 			color: @white;
 			font-size: 1em;
-			line-height: 1.3;
+			line-height: @base;
 			p {
-				font-size: .875em; //14px
+				font-size: .8em; //14px
 			} //p
 		} //.textwidget
 		h3 {
@@ -1449,8 +1449,10 @@ footer.footer { // footer (and footer nav) formatting
 			text-transform: uppercase;
 			color: @white;
 			text-decoration: none;
+			transition: color 0.5s ease;
 			&:active, &:focus, &:hover {
 				color: @offwhite;
+				transition: color 0s ease;
 			} // &:active, &:focus, &:hover
 		} // li
 		ul.sub-menu,
@@ -1489,7 +1491,7 @@ footer.footer { // footer (and footer nav) formatting
 	.copyright {
 		margin-top: @base;
 		margin-bottom: @base;
-		font-size: 0.714286rem !important; // 10px/14px
+		font-size: 0.77em !important; // 10px/14px
 		color: @offwhite !important;
 	}
 } //  footer.footer
@@ -1507,7 +1509,7 @@ p.source-org {
 }
 
 .textwidget {
-	font-size: 0.88rem;
+	font-size: 0.9em;
 	.wpcf-text{
 		width: 100%;
 	}
@@ -1528,10 +1530,10 @@ p.source-org {
 .widget_search input[type='submit'] {
 	&:extend(a .button2);
 	width: 6em;
-	height:(@base*2);
+	height:(@base*2.15);
 	font-size: 1em;
 	position: absolute;
-	top:(@base*0.55);
+	top:(@base*0.65);
 	right:0.5em;
 	border: none;
 	border-bottom-left-radius: 0;
@@ -1556,4 +1558,15 @@ textarea {
 	padding: (@base*0.5) 1em;
 	.border-radius(10px);
 	border: 2px solid @offwhite;
+}
+
+.footer .widget_search input[type='text'] {
+	margin-top:(@base*0.38);
+	height:(@base*2.15);
+	font-size: 0.8em;
+}
+.footer .widget_search input[type='submit'] {
+	font-size: 0.8em;
+	top:0;
+	right:0;
 }
