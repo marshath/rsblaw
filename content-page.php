@@ -14,6 +14,11 @@
 			<?php } ?>
 		
 			<header class="article-header">
+				<?php if (is_page(array(92, 235, 94, 21, 237, 93))) { // display the practice area icon, if a practice area page ?>
+					<div class="icon-<?php echo get_field("pa_callout_icon"); ?>"></div>
+				<?php } else { 
+					echo "";
+				} ?>
 				<h1 class="page-title" itemprop="headline"><?php the_title(); ?></h1>
 			</header> <!-- end article header -->
 			
