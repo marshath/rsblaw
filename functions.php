@@ -40,9 +40,6 @@ require_once('library/admin.php'); // this comes turned off by default
 */
 // require_once('library/translation/translation.php'); // this comes turned off by default
 
-// LOAD ADVANCED CUSTOM FIELDS PLUGIN
-define( 'ACF_LITE', true ); // hide the ACF menu item in the left sidebar of the Admin Area
-// include_once('library/advanced-custom-fields/acf.php'); // load ACF from the theme's library folder
 
 	/************* THUMBNAIL SIZE OPTIONS *************/
 

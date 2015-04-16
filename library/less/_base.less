@@ -144,13 +144,12 @@ ICON FONT FROM ICOMOON ENDS HERE
 
 // Call to action on home page starts here
 .cta-textbox { //at smaller sizes the textbox breaks below the image, so the text can be bigger
-	// clear:both;
-	position: static;
-	max-width: 100%;
+	width: 100%;
 	border-width: 12px solid @white;
 	background-color: @paleyellow;
 	padding: 0.25em 1em;
 	border: 0.5em solid @white;
+	position: static;
 	h1 {
 		color: @darkbrown;
 		font-size: 2.25em;
@@ -170,30 +169,33 @@ ICON FONT FROM ICOMOON ENDS HERE
 .cta-container { //homepage image is overlapped by the header gradient and logo, appears directly below gradient
 	margin: 0;
 	padding: 0;
-	z-index: -1;
-	position: relative;
-	line-height: 1;
 }
 
 .cta-image {
-	width: 100%;
 	margin:0;
 	padding:0;
-	position: static;
 }
-
+.cta-hero {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 0%;
+	position: relative;
+}
 .home-link { //position logo/home link above all other layers
+	width:341px;
+	height:97px;
 	display: inline-block;
 	position: relative;
 	left: 15px;
 	top: 27px;
 	z-index: 999;
+	-webkit-box-shadow: 3px 3px 12px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 3px 3px 12px 0px rgba(0,0,0,0.75);
+	box-shadow: 3px 3px 12px 0px rgba(0,0,0,0.75);
 }
 .home-link > img {
 	width: 100%;
-	max-width: 341px;
-	height: auto;
-	height:auto;
+	
 }
 
 #main { //position in front of the custom background but behind the logo
@@ -204,7 +206,7 @@ ICON FONT FROM ICOMOON ENDS HERE
 img {
 	max-width: 100%;
 	height: auto;
-	padding: 0 1rem 0 0;
+	padding: 0;
 }
 article {
 	ul{ 

@@ -36,7 +36,7 @@ get_header();
 			} //endif
 			?>
 	
-			<h2 class="section-title">Published Articles And Decisions</h2>
+			<h2 class="section-title">Published Articles &amp; Decisions</h2>
 			
 			<?php /*********************************************************************
 			 PUBLISHED ARTICLES AND DECISIONS LOOP
@@ -70,7 +70,7 @@ get_header();
 			?>
 			<div class="clearfix cushion"></div>
 			<div class="sixcol first tan_box2">
-				<h2 class="section-title"><?php echo $displayname; ?>'s Amazing Results</h2>
+				<h2 class="section-title">Attorney Results</h2>
 
 				<?php /****************************************************
 				 ATTORNEY'S AMAZING RESULTS QUERY-- MOST RECENT
@@ -100,7 +100,7 @@ get_header();
 			</div> <!-- end .sixcol .first-->
 			
 			<div class="sixcol last blog-bar"> <!-- responsible for the vertical divider to its left-->
-				<h2 class="section-title"><?php echo $displayname;?>'s Recent Blog Posts</h2>
+				<h2 class="section-title">Recent Blog Posts</h2>
 				
 				<?php /****************************************************
 				BLOG POSTS QUERY-- MOST RECENT

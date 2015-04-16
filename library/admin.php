@@ -71,6 +71,10 @@ function my_remove_admin_bar_links() {
 	$wp_admin_bar->remove_menu('wpseo-menu'); // Yoast SEO 
 }
 
+// LOAD ADVANCED CUSTOM FIELDS PLUGIN
+define( 'ACF_LITE', true ); // hide the ACF menu item in the left sidebar of the Admin Area
+// include_once('library/advanced-custom-fields/acf.php'); // load ACF from the theme's library folder
+
 
 /************* CUSTOM LOGIN PAGE *****************/
 
