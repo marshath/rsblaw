@@ -15,8 +15,10 @@ Digging into WP - http://digwp.com/2010/10/customize-wordpress-dashboard/
 
 */
 
-
 /************* ADMIN MENU & DASHBOARD *****************/
+
+// LOAD ADVANCED CUSTOM FIELDS PLUGIN
+define( 'ACF_LITE', true ); // hide the ACF menu item in the left sidebar of the Admin Area
 
 // REMOVE ADMIN DASHBOARD WIDGETS
 add_action('admin_init', 'remove_dashboard_meta');
@@ -36,7 +38,7 @@ remove_action('welcome_panel', 'wp_welcome_panel');
 add_action('admin_menu', 'my_remove_menu_pages');
 function my_remove_menu_pages() {
 	// remove_menu_page('index.php'); // dashboard
-	// remove_menu_page('edit.php'); // posts
+	remove_menu_page('edit.php'); // posts
 	// remove_menu_page('edit-comments.php'); // comments
 	// remove_menu_page('themes.php'); // appearance
 	remove_menu_page('plugins.php'); // plugins
@@ -67,13 +69,9 @@ function my_remove_admin_bar_links() {
 	$wp_admin_bar->remove_menu('updates'); // updates
 	$wp_admin_bar->remove_menu('comments'); // comments
 	$wp_admin_bar->remove_menu('new-content'); // new post
-	// $wp_admin_bar->remove_menu('edit'); // edit post 
+	// $wp_admin_bar->remove_menu('edit'); // edit post
 	$wp_admin_bar->remove_menu('wpseo-menu'); // Yoast SEO 
 }
-
-// LOAD ADVANCED CUSTOM FIELDS PLUGIN
-define( 'ACF_LITE', true ); // hide the ACF menu item in the left sidebar of the Admin Area
-// include_once('library/advanced-custom-fields/acf.php'); // load ACF from the theme's library folder
 
 
 /************* CUSTOM LOGIN PAGE *****************/
