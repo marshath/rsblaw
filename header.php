@@ -54,8 +54,8 @@
 		<header class="header" role="banner">
 
 			<div id="inner-header" class="wrap clearfix">
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" id="sitelogo">
-					<div class="home-link"><img src="<?php bloginfo('template_directory'); ?>/library/images/rsb-logo.gif" /></div>
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" id="sitelogo" title="Home">
+					<div class="home-link"><img src="<?php bloginfo('template_directory'); ?>/library/images/rsb-logo.gif" alt="Rose Senders and Bovarnick, LLC" /></div>
 				</a>
 				<!-- Call the slogan with HTML formatting -->
 				<div class="slogan"><?php echo html_entity_decode(get_bloginfo('description')); ?></div>
