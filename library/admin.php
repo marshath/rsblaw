@@ -27,7 +27,7 @@ function remove_dashboard_meta() {
 	// remove_meta_box('dashboard_incoming_links', 'dashboard', 'normal'); // incoming links
 	remove_meta_box('dashboard_quick_press', 'dashboard', 'side'); // quick press
 	// remove_meta_box('dashboard_recent_drafts', 'dashboard', 'side'); // drafts
-	// remove_meta_box('dashboard_recent_comments', 'dashboard', 'normal'); // comments
+	remove_meta_box('dashboard_recent_comments', 'dashboard', 'normal'); // comments
 	// remove_meta_box('dashboard_activity', 'dashboard', 'normal'); // recent activity
 } 
 
@@ -39,7 +39,7 @@ add_action('admin_menu', 'my_remove_menu_pages');
 function my_remove_menu_pages() {
 	// remove_menu_page('index.php'); // dashboard
 	remove_menu_page('edit.php'); // posts
-	// remove_menu_page('edit-comments.php'); // comments
+	remove_menu_page('edit-comments.php'); // comments
 	// remove_menu_page('themes.php'); // appearance
 	remove_menu_page('plugins.php'); // plugins
 	// remove_menu_page('users.php'); //users

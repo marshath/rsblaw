@@ -3,6 +3,10 @@
 Author: Ben Beekman
 */
 
+// update_option('siteurl','http://localhost:8888/rsblaw.net/beta');
+// update_option('home','http://localhost:8888/rsblaw.net/beta');
+
+
 /************* INCLUDE NEEDED FILES ***************/
 
 /*
