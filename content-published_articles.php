@@ -11,7 +11,15 @@
 		<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 			
 			<header class="article-header"> <!-- may need to remove this header, added because there was a closing -->
-				<h3 class="entry-title" itemprop="headline"><a href="<?php echo $link; ?>" title="<?php echo $pub; ?>"><?php the_title(); ?></a></h3>
+				<?php if (get_field('publication-link')) { ?> 
+					<h3 class="entry-title" itemprop="headline">
+						<a href="<?php echo $link; ?>" title="<?php echo $pub; ?>"><?php the_title(); ?></a>
+					</h3>
+				<?php } else { ?>
+					<h3 class="entry-title" itemprop="headline">
+						<?php echo the_title(); ?>
+					</h3>
+				<?php } ?>
 				<p class="byline vcard">Published in <?php echo $pub; ?> on <em><?php the_time( get_option( 'date_format' ) ); ?></em></p>
 			</header> <!-- end article header -->
 		

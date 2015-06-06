@@ -37,8 +37,6 @@ get_header();
 			?>
 			<div class="clearfix cushion"></div>
 			<div class="sixcol first tan_box2">
-				<h2 class="section-title">Attorney Results</h2>
-
 				<?php /****************************************************
 				 ATTORNEY'S AMAZING RESULTS QUERY-- MOST RECENT
 				**********************************************************/
@@ -46,10 +44,10 @@ get_header();
 				// WP_Query arguments
 				$result_args = array (
 					'post_type'              => 'rsb_result',
-					'pagination'             => true,
-					'paged'                  => '1',
-					'posts_per_page'         => '2',
-					'posts_per_archive_page' => '2',
+					'pagination'             => false,
+					'paged'                  => '',
+					'posts_per_page'         => '',
+					'posts_per_archive_page' => '',
 					'tag'               => $tag_slug //match the page's manually assigned user slug to the manually assigned slug for rsb_result posts.
 				);
 				
@@ -57,6 +55,7 @@ get_header();
 				$results_query = new WP_Query( $result_args );
 				// The Loop
 				if ( $results_query->have_posts() ) {
+					echo '<h2 class="section-title">Attorney Results</h2>'; // write the section title
 					while ( $results_query->have_posts() )  {
 						$results_query->the_post();
 					include(locate_template('content-rsb_result.php')); // i.e. get_template_part('content', 'rsb_results');
@@ -67,9 +66,7 @@ get_header();
 			</div> <!-- end .sixcol .first-->
 			
 			<div class="sixcol last blog-bar"> <!-- responsible for the vertical divider to its left-->
-	
-				<h2 class="section-title">Published Articles &amp; Decisions</h2>
-				
+			
 				<?php /*********************************************************************
 				 PUBLISHED ARTICLES AND DECISIONS LOOP
 				**********************************************************************/
@@ -77,10 +74,10 @@ get_header();
 				$article_args = array (
 					'post_type'              => 'published_articles',
 					// 'post_status'            => 'published',
-					'pagination'             => 'true',
+					'pagination'             => 'false',
 					'paged'                  => '1',
-					'posts_per_page'         => '2',
-					'posts_per_archive_page' => '2',
+					'posts_per_page'         => '',
+					'posts_per_archive_page' => '',
 					'order'                  => 'DESC',
 					'orderby'                => 'date',
 					'tag'               => $tag_slug
@@ -91,6 +88,7 @@ get_header();
 				
 				// The Loop
 				if ( $articles_decisions_query->have_posts() ) {
+					echo '<h2 class="section-title">Published Articles &amp; Decisions</h2>'; // write the section title
 					while ( $articles_decisions_query->have_posts() ) {
 						$articles_decisions_query->the_post();
 						$pub=get_field('publication-title');
