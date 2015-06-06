@@ -5,7 +5,7 @@
     } //endif
 	else; //ignore
 	//endif
-    $qf=get_field('quick-facts', 13);
+    $qf=get_field('quick-facts', 11);
     $quickfacts = '<div id="quick-facts" class="widget widget_text"><h4>Quick Facts</h4>'; //prepend opening div
     $quickfacts .= $qf;
     $quickfacts .= '</div>'; //append closing div

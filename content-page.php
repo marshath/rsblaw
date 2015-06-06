@@ -30,7 +30,34 @@
 			if ((is_page('home')) or (is_page('firm-overview'))) {
 				get_template_part ('content' , 'practice_area_callouts');
 			} ?>
-						
-			<?php // <footer class="article-footer"></footer> <!-- end article footer --> ?>
+			
+			<?php /******* INSERT PRACTICE AREA PDFs, if avilable *******/
+			if (is_page(array(92, 235, 94, 21, 237, 93))) { // display the practice area pdfs, if a practice area page
+
+				if( have_rows('attach_a_pdf') ): ?>
+				    <div id="practice-area-pdfs" class="practice-area-pdfs">
+					    <h3>Related PDF's</h3>
+						<ul>
+					
+					    <?php while( have_rows('attach_a_pdf') ): the_row(); ?>
+					        <li>
+								<a href="<?php $pdf = get_sub_field('pdf_file'); echo $pdf['url']; ?>">
+									<span class="button2">
+										<span class="dashicons dashicons-media-default"></span><br>
+										<?php $pdf = get_sub_field('pdf_file'); echo $pdf['title']; ?>
+									</span>
+								</a>
+							</li>
+					    <?php endwhile; ?>
+					
+					    </ul>
+				    </div>
+				<?php endif;
+				
+			} else { 
+				echo "";
+			}
+			 
+			// <footer class="article-footer"></footer> <!-- end article footer --> ?>
 		
 		</article> <!-- end article -->
