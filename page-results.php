@@ -66,6 +66,7 @@ get_header(); ?>
 						<article>
 						    <header>
 						        <h3 class="entry-title" itemprop="headline"><?php the_title(); ?></h3>
+						        <h4><?php the_field('tagline'); ?></h4>
 						    </header> <!-- end article header -->
 						    
 						    <section class="entry-content clearfix" itemprop="articleBody">
