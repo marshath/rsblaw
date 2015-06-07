@@ -96,7 +96,7 @@ function bones_register_sidebars() {
 		'before_title'  => '<h4 class="widget-title">',
 		'after_title'   => '</h4>',
 	));
-	register_sidebar( array(
+	/* register_sidebar( array(
 		'name'          => __( 'Practice Areas Sidebar', 'rsblawtheme' ),
 		'id'            => 'practice-areas-sidebar',
 		'description'   => __( 'Sidebar for the Practice Areas page', 'rsblawtheme' ),
@@ -113,7 +113,7 @@ function bones_register_sidebars() {
 		'after_widget'  => '</div>',
 		'before_title'  => '<h4 class="widget-title">',
 		'after_title'   => '</h4>',
-	));
+	)); */
 	register_sidebar( array(
 		'name'          => __( 'Blog Archive Sidebar', 'rsblawtheme' ),
 		'id'            => 'blog-archive-sidebar',

@@ -7,7 +7,7 @@
  * @since RSBlaw.net 1.0
  */
 ?>
-					<div class="<?php if (is_page('results')) {
+					<div class="<?php if (is_page(array ('results','testimonials'))) {
 							echo 'twelvecol'; 
 						} else {
 							echo 'fourcol';
@@ -17,7 +17,7 @@
 						<p><?php echo get_field( "pa_callout_body", 92 ); ?></p>
 						<a title="<?php echo get_field( "pa_callout_heading", 92 ); ?>" href="<?php echo get_field( "pa_callout_link", 92 ); ?>"><div class="button2"><?php echo get_field( "pa_callout_link_label", 92 ); ?></div></a>
 					</div>
-					<div class="<?php if (is_page('results')) {
+					<div class="<?php if (is_page(array ('results','testimonials'))) {
 							echo 'twelvecol'; 
 						} else {
 							echo 'fourcol';
@@ -27,7 +27,7 @@
 						<p><?php echo get_field( "pa_callout_body", 235 ); ?></p>
 						<a title="<?php echo get_field( "pa_callout_heading", 235 ); ?>" href="<?php echo get_field( "pa_callout_link", 235 ); ?>"><div class="button2"><?php echo get_field( "pa_callout_link_label", 235 ); ?></div></a>
 					</div>
-					<div class="<?php if (is_page('results')) {
+					<div class="<?php if (is_page(array ('results','testimonials'))) {
 							echo 'twelvecol'; 
 						} else {
 							echo 'fourcol';
@@ -37,7 +37,7 @@
 						<p><?php echo get_field( "pa_callout_body", 94 ); ?></p>
 						<a title="<?php echo get_field( "pa_callout_heading", 94 ); ?>" href="<?php echo get_field( "pa_callout_link", 94 ); ?>"><div class="button2"><?php echo get_field( "pa_callout_link_label", 94 ); ?></div></a>
 					</div>
-					<div class="<?php if (is_page('results')) {
+					<div class="<?php if (is_page(array ('results','testimonials'))) {
 							echo 'twelvecol'; 
 						} else {
 							echo 'fourcol';
@@ -47,7 +47,7 @@
 						<p><?php echo get_field( "pa_callout_body", 21 ); ?></p>
 						<a title="<?php echo get_field( "pa_callout_heading", 21 ); ?>" href="<?php echo get_field( "pa_callout_link", 21 ); ?>"><div class="button2"><?php echo get_field( "pa_callout_link_label", 21 ); ?></div></a>
 					</div>
-					<div class="<?php if (is_page('results')) {
+					<div class="<?php if (is_page(array ('results','testimonials'))) {
 							echo 'twelvecol'; 
 						} else {
 							echo 'fourcol';
@@ -57,7 +57,7 @@
 						<p><?php echo get_field( "pa_callout_body", 237 ); ?></p>
 						<a title="<?php echo get_field( "pa_callout_heading", 237 ); ?>" href="<?php echo get_field( "pa_callout_link", 237 ); ?>"><div class="button2"><?php echo get_field( "pa_callout_link_label", 237 ); ?></div></a>
 					</div>
-					<div class="<?php if (is_page('results')) {
+					<div class="<?php if (is_page(array ('results','testimonials'))) {
 							echo 'twelvecol'; 
 						} else {
 							echo 'fourcol';
