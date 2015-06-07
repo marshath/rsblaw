@@ -44,10 +44,8 @@
 					    <?php while( have_rows('attach_a_pdf') ): the_row(); ?>
 					        <li>
 								<a href="<?php $pdf = get_sub_field('pdf_file'); echo $pdf['url']; ?>">
-									<span class="button2">
-										<span class="dashicons dashicons-media-default"></span><br>
-										<?php $pdf = get_sub_field('pdf_file'); echo $pdf['title']; ?>
-									</span>
+									<span class="dashicons dashicons-media-default"></span>
+									<?php $pdf = get_sub_field('pdf_file'); echo $pdf['title']; ?>
 								</a>
 							</li>
 					    <?php endwhile; ?>

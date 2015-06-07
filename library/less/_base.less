@@ -33,6 +33,11 @@ Don't over-style here--everything in this file will be loaded by mobile devices.
 	span {padding: 0 0.5rem 0 0;} //spacing between meta links
 } //.entry-meta
 
+.entry-tagline {
+	font-family: arial,helvetica, sans-serif;
+	font-style: italic;
+	font-size: 0.8em;
+}
 #main ul > li {
 	margin-left: 2em;
 }
@@ -1633,12 +1638,25 @@ textarea {
 		display:inline-block;
 		width:31%;
 		float:left;
-		text-align:center;
-		margin:0 2% 0 0 !important;
+		line-height: 1em;
+		margin:0 2% 2% 0 !important;
+	}
+	a {
+		background-color: #ddd;
+		display:inline-block;
+		padding: 10px 0.5em;
+		border: 1px solid @white;
+		border-radius: 8px;
+		&:hover {
+			background-color: #efefef;
+			text-decoration: none;
+		}
 	}
 	.dashicons {
-		font-size:3em;
+		font-size:2.2em;
 		width:inherit;
-		margin-bottom:0.75em;
+		margin-bottom:20px;
+		display: inline-block;
+		float: left;
 	}
 }
