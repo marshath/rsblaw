@@ -34,7 +34,7 @@
 				</div> <!-- right-side footer widgets end here-->
 
 				<div class="clearfix twelvecol first last aligncenter">
-					<p class="source-org copyright">Copyright &copy; <?php echo date('Y');?> Rose, Senders &amp; Bovarnick, LLC. All rights reserved.</p>
+					<p class="source-org copyright">Copyright &copy; <?php echo date('Y');?> Rose Senders and Bovarnick, LLC. All rights reserved.</p>
 				</div>
 				
 			</div> <!-- end #inner-footer -->

@@ -36,6 +36,18 @@
 
 	<link href='http://fonts.googleapis.com/css?family=Merriweather:400,700,700italic' rel='stylesheet' type='text/css'>
 	<!-- <link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'> -->
+	
+	<?php if (($post->post_parent == 11)) { // Flexsider javascript ?>
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/library/flexslider/flexslider.css" type="text/css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+		<script src="<?php echo get_template_directory_uri(); ?>/library/flexslider/jquery.flexslider.js"></script>
+		
+		<script type="text/javascript" charset="utf-8">
+		  $(window).load(function() {
+		    $('.bne-flexslider').bne-flexslider();
+		  });
+		</script>
+	<?php } ?>
 </head>
 
 <body <?php body_class(); ?>>
@@ -54,8 +66,8 @@
 		<header class="header" role="banner">
 
 			<div id="inner-header" class="wrap clearfix">
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" id="sitelogo">
-					<div class="home-link"><img src="<?php bloginfo('template_directory'); ?>/library/images/rsb-logo.gif" /></div>
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" id="sitelogo" title="Home">
+					<div class="home-link"><img src="<?php bloginfo('template_directory'); ?>/library/images/rsb-logo.gif" alt="Rose Senders and Bovarnick, LLC" /></div>
 				</a>
 				<!-- Call the slogan with HTML formatting -->
 				<div class="slogan"><?php echo html_entity_decode(get_bloginfo('description')); ?></div>

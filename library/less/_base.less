@@ -33,6 +33,11 @@ Don't over-style here--everything in this file will be loaded by mobile devices.
 	span {padding: 0 0.5rem 0 0;} //spacing between meta links
 } //.entry-meta
 
+.entry-tagline {
+	font-family: arial,helvetica, sans-serif;
+	font-style: italic;
+	font-size: 0.8em;
+}
 #main ul > li {
 	margin-left: 2em;
 }
@@ -144,13 +149,12 @@ ICON FONT FROM ICOMOON ENDS HERE
 
 // Call to action on home page starts here
 .cta-textbox { //at smaller sizes the textbox breaks below the image, so the text can be bigger
-	// clear:both;
-	position: static;
-	max-width: 100%;
+	width: 100%;
 	border-width: 12px solid @white;
 	background-color: @paleyellow;
 	padding: 0.25em 1em;
 	border: 0.5em solid @white;
+	position: static;
 	h1 {
 		color: @darkbrown;
 		font-size: 2.25em;
@@ -170,30 +174,43 @@ ICON FONT FROM ICOMOON ENDS HERE
 .cta-container { //homepage image is overlapped by the header gradient and logo, appears directly below gradient
 	margin: 0;
 	padding: 0;
-	z-index: -1;
-	position: relative;
-	line-height: 1;
 }
 
 .cta-image {
-	width: 100%;
 	margin:0;
 	padding:0;
-	position: static;
 }
-
+.cta-hero {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 0%;
+	position: relative;
+}
 .home-link { //position logo/home link above all other layers
+	width:341px;
+	height:97px;
 	display: inline-block;
 	position: relative;
 	left: 15px;
 	top: 27px;
 	z-index: 999;
+	-webkit-box-shadow: 3px 3px 12px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 3px 3px 12px 0px rgba(0,0,0,0.75);
+	box-shadow: 3px 3px 12px 0px rgba(0,0,0,0.75);
 }
+@media only screen and (max-width: 481px) { //position logo/home fix for phone H layout
+	.home-link {
+		width: 280px;
+		height:80px;
+		img {
+			width:100%;
+		}
+	}
+}
+
 .home-link > img {
 	width: 100%;
-	max-width: 341px;
-	height: auto;
-	height:auto;
+	
 }
 
 #main { //position in front of the custom background but behind the logo
@@ -204,7 +221,7 @@ ICON FONT FROM ICOMOON ENDS HERE
 img {
 	max-width: 100%;
 	height: auto;
-	padding: 0 1rem 0 0;
+	padding: 0;
 }
 article {
 	ul{ 
@@ -907,7 +924,7 @@ pre {
 		.size-medium {}
 		.size-thumbnail {}
 
-.page-template-page-results-php #content article {
+.page-template-page-results-php #content article, .page-id-815 #content article {
 	border-bottom: 2px dotted @offwhite;
 	margin-top: (@base*2);
 	padding-bottom: @base;
@@ -1301,7 +1318,9 @@ pre {
 .widget-title {
 	text-transform: uppercase;
 }
-
+.bne-testimonial-slider .bne-flexslider {
+	position: relative;
+}
 .bne_testimonial_slider_widget {
 	-webkit-box-shadow: 2px 2px 9px -1px #fff; /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
 	box-shadow: 2px 2px 9px -1px #fff; /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */
@@ -1320,7 +1339,7 @@ pre {
 		font-style:italic;
 		font-size: 1.6rem;
 		line-height: 1.25;
-		margin: 0 0 0 0;
+		margin: 0 0 1em;
 		padding: 0 0 0 0;
 		position:static;
 		visibility: visible;
@@ -1333,23 +1352,37 @@ pre {
 			color: @grey;
 			content: '\201C';
 			float: left;
-			// font-size: 5rem; //quotation mark size
-			//
-			// line-height: 0.8;
-			// font-face: @garamond;
-			// font-weight: bold;
-			// font-style: normal;
-			// -moz-hyphens: none;
-			// hyphens: none;
-			// height: 45px;
-			// width: 50px;
-			// margin-top: -20px;
-			// padding-top: 45px;
-			// margin-bottom: -50px;
-		} //&:before
-	} //.bne-testimonial-description
-} //.bne_testimonial_slider_widget
+		}
+	}
+	.bne-testimonial-heading {
+		margin: 0 0 5px 0;
+	}
+	.bne-testimonial-details {
+		font-size: 0.7em;
+		font-style: italic;
+		padding: 0.25em 0.5em;
+		margin: 0 0 12px 0;
+		line-height: 1.2em;
+	}
+	.bne-testimonial-slider-wrapper {
+		padding: 4px;
+		border: solid 1px #ccc;
+		position: relative;
+		box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+		zoom:1;
+	}
+	.flex-content {
+		padding: 8px 12px 0px;
+	}
+	.flex-direction-nav {
+		display: none;
+	}
+}
 
+.flex-control-nav {
+	position: relative !important;
+	bottom: 0 !important;
+}
 .sidebar {
 	padding: 0 2em; //left and right padding for mobile
 	margin-top: (@base*3) !important;
@@ -1575,4 +1608,65 @@ textarea {
 	font-size: 0.8em;
 	top:0;
 	right:0;
+}
+
+
+// Testimonial over rides //
+.bne-testimonial-heading {
+	font-size: 1.7em;
+	text-transform: inherit;
+	margin: 0;
+}
+.bne-testimonial-details {
+	background-color: @gray;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 0.7em;
+	font-weight: bold;
+	color: @white;
+	text-transform: uppercase;
+	padding: 0.25em 0.5em;
+}
+.bne-testimonial-description p {
+	font-size: 1em;
+	line-height: 1.4em;
+	margin-bottom: 1em;
+}
+.bne-testimonial-slider.flexslider .flex-content {
+	padding-top: 30px !important;
+}
+
+// Practice Area PDF links //
+.practice-area-pdfs {
+	h3 {
+		margin:1.5em 0;
+	}
+	ul {
+		margin:0;
+		list-style:none;
+	}
+	li {
+		display:inline-block;
+		width:31%;
+		float:left;
+		line-height: 1em;
+		margin:0 2% 2% 0 !important;
+	}
+	a {
+		background-color: #ddd;
+		display:inline-block;
+		padding: 10px 0.5em;
+		border: 1px solid @white;
+		border-radius: 8px;
+		&:hover {
+			background-color: #efefef;
+			text-decoration: none;
+		}
+	}
+	.dashicons {
+		font-size:2.2em;
+		width:inherit;
+		margin-bottom:20px;
+		display: inline-block;
+		float: left;
+	}
 }

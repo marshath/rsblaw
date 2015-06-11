@@ -11,7 +11,7 @@
 					// Include the page content template.
 					get_template_part( 'content', 'page' );
 				} //endwhile
-			} //else { ?>
+			} else { ?>
 
 			<article id="post-not-found" class="hentry clearfix">
 			
@@ -28,6 +28,8 @@
 				</footer>
 				
 			</article>
+			
+			<?php } // end else ?>
 		
 		</div> <!-- end #main -->
 

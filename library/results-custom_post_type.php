@@ -82,6 +82,41 @@ function rsb_result_cpt() {
 	); /* end of register Published Articles and Decisions */
 	
 	
+	// ******************************************
+	// Registering TESTIMONIALS 
+	// ******************************************
+	
+	register_post_type( 'testimonials', /* (http://codex.wordpress.org/Function_Reference/register_post_type) */
+		// let's now add all the options for this post type
+		array( 'labels' => array(
+			'name' => __( 'Testimonials', 'bonestheme' ), /* This is the Title of the Group */
+			'singular_name' => __( 'Testimonial', 'bonestheme' ), /* This is the individual type */
+			'all_items' => __( 'All Testimonials', 'bonestheme' ), /* the all items menu item */
+			'add_new' => __( 'Add New', 'bonestheme' ), /* The add new menu item */
+			'add_new_item' => __( 'Add New Testimonial', 'bonestheme' ), /* Add New Display Title */
+			'edit' => __( 'Edit', 'bonestheme' ), /* Edit Dialog */
+			'edit_item' => __( 'Edit Testimonials', 'bonestheme' ), /* Edit Display Title */
+			'new_item' => __( 'New Testimonial', 'bonestheme' ), /* New Display Title */
+			'view_item' => __( 'View Testimonial', 'bonestheme' ), /* View Display Title */
+			'search_items' => __( 'Search Testimonial', 'bonestheme' ), /* Search Partner Title */ 
+			'not_found' =>  __( 'Nothing found in the Database.', 'bonestheme' ), /* This displays if there are no entries yet */ 
+			'not_found_in_trash' => __( 'Nothing found in Trash', 'bonestheme' ), /* This displays if there is nothing in the trash */
+			'parent_item_colon' => ''
+			), /* end of arrays */
+			'description' => __( 'Media coverage of testimonials and other articles', 'bonestheme' ), /* Partner Description */
+			'public' => false,
+			'publicly_queryable' => true,
+			'exclude_from_search' => false,
+			'show_ui' => true,
+			'query_var' => true,
+			'menu_position' => 22, /* this is what order you want it to appear in on the left hand side menu */ 
+			'menu_icon' => 'dashicons-format-quote', /* the icon for the custom post type menu */
+			'taxonomies' => array('category', 'post_tag'), /* displays categories and tags for the cpt */
+			'capability_type' => 'post'
+		) /* end of options */
+	); /* end of register Published Articles and Decisions */
+	
+	
 	// ****************************************************
 	// Add the default Categories or Tags to the post types 
 	// ****************************************************

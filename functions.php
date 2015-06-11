@@ -3,6 +3,10 @@
 Author: Ben Beekman
 */
 
+// update_option('siteurl','http://localhost:8888/rsblaw.net/beta');
+// update_option('home','http://localhost:8888/rsblaw.net/beta');
+
+
 /************* INCLUDE NEEDED FILES ***************/
 
 /*
@@ -40,9 +44,6 @@ require_once('library/admin.php'); // this comes turned off by default
 */
 // require_once('library/translation/translation.php'); // this comes turned off by default
 
-// LOAD ADVANCED CUSTOM FIELDS PLUGIN
-define( 'ACF_LITE', true ); // hide the ACF menu item in the left sidebar of the Admin Area
-// include_once('library/advanced-custom-fields/acf.php'); // load ACF from the theme's library folder
 
 	/************* THUMBNAIL SIZE OPTIONS *************/
 
@@ -95,7 +96,7 @@ function bones_register_sidebars() {
 		'before_title'  => '<h4 class="widget-title">',
 		'after_title'   => '</h4>',
 	));
-	register_sidebar( array(
+	/* register_sidebar( array(
 		'name'          => __( 'Practice Areas Sidebar', 'rsblawtheme' ),
 		'id'            => 'practice-areas-sidebar',
 		'description'   => __( 'Sidebar for the Practice Areas page', 'rsblawtheme' ),
@@ -112,7 +113,7 @@ function bones_register_sidebars() {
 		'after_widget'  => '</div>',
 		'before_title'  => '<h4 class="widget-title">',
 		'after_title'   => '</h4>',
-	));
+	)); */
 	register_sidebar( array(
 		'name'          => __( 'Blog Archive Sidebar', 'rsblawtheme' ),
 		'id'            => 'blog-archive-sidebar',
