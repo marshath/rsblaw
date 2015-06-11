@@ -18,7 +18,7 @@ Digging into WP - http://digwp.com/2010/10/customize-wordpress-dashboard/
 /************* ADMIN MENU & DASHBOARD *****************/
 
 // LOAD ADVANCED CUSTOM FIELDS PLUGIN
-// define( 'ACF_LITE', true ); // hide the ACF menu item in the left sidebar of the Admin Area
+define( 'ACF_LITE', true ); // hide the ACF menu item in the left sidebar of the Admin Area
 
 // REMOVE ADMIN DASHBOARD WIDGETS
 add_action('admin_init', 'remove_dashboard_meta');
@@ -41,7 +41,7 @@ function my_remove_menu_pages() {
 	remove_menu_page('edit.php'); // posts
 	remove_menu_page('edit-comments.php'); // comments
 	// remove_menu_page('themes.php'); // appearance
-	// remove_menu_page('plugins.php'); // plugins
+	remove_menu_page('plugins.php'); // plugins
 	// remove_menu_page('users.php'); //users
 	remove_menu_page('tools.php'); //tools
 	// remove_menu_page('options-general.php'); // settings
