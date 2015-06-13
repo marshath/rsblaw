@@ -61,6 +61,33 @@
 			<section class="ninecol entry-content clearfix">
 				<p class="excerpt">
 				<p><?php the_content(); ?></p>
+			
+				<?php /******* INSERT PRACTICE AREA PDFs, if avilable *******/
+				if (have_rows('attach_a_pdf')) { // display the practice area pdfs, if a practice area page
+	
+					if( have_rows('attach_a_pdf') ): ?>
+					    <div id="practice-area-pdfs" class="practice-area-pdfs">
+						    <h3>Available PDF's</h3>
+							<ul>
+						
+						    <?php while( have_rows('attach_a_pdf') ): the_row(); ?>
+						        <li>
+									<a href="<?php $pdf = get_sub_field('pdf_file'); echo $pdf['url']; ?>">
+										<span class="dashicons dashicons-media-default"></span>
+										<?php $pdf = get_sub_field('pdf_file'); echo $pdf['title']; ?>
+									</a>
+								</li>
+						    <?php endwhile; ?>
+						
+						    </ul>
+					    </div>
+					<?php endif;
+					
+				} else { 
+					echo "";
+				} ?>
+				
 			</section> <!-- end article section -->
+			
 			
 		</article>
