@@ -114,6 +114,11 @@ function bones_gallery_style($css) {
   return preg_replace("!<style type='text/css'>(.*?)</style>!s", '', $css);
 }
 
+add_action('wp_enqueue_scripts', 'load_dashicons_front_end'); // add dashicons
+function load_dashicons_front_end() {
+	wp_enqueue_style('dashicons');
+}
+
 
 /*********************
 SCRIPTS & ENQUEUEING
