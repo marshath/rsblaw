@@ -38,7 +38,7 @@
 
 				if( have_rows('attach_a_pdf') ): ?>
 				    <div id="practice-area-pdfs" class="practice-area-pdfs">
-					    <h3>Related PDF's</h3>
+					    <h3>Available PDF's</h3>
 						<ul>
 					
 					    <?php while( have_rows('attach_a_pdf') ): the_row(); ?>

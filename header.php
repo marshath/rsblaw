@@ -34,9 +34,11 @@
 	<?php wp_head(); ?>
 	<!-- end of wordpress head -->
 
+	<!-- load google fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Merriweather:400,700,700italic' rel='stylesheet' type='text/css'>
 	<!-- <link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'> -->
 	
+	<!-- load flexslider scripts -->
 	<?php if (($post->post_parent == 11)) { // Flexsider javascript ?>
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/library/flexslider/flexslider.css" type="text/css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>

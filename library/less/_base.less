@@ -167,8 +167,12 @@ ICON FONT FROM ICOMOON ENDS HERE
 } //end .cta-textbox
 
 .slogan { //the Emergency phone number in the top right on desktop-- hide it for mobile
-	display: none;
-	visibility: hidden;
+    display: block;
+    font-size: 0.9em;
+    font-style: italic;
+    position:relative;
+    margin: 1em 0.8em;
+    color: @offwhite;
 }
 
 .cta-container { //homepage image is overlapped by the header gradient and logo, appears directly below gradient
@@ -1646,13 +1650,15 @@ textarea {
 	}
 	li {
 		display:inline-block;
-		width:31%;
+		width:48%;
 		float:left;
 		line-height: 1em;
 		margin:0 2% 2% 0 !important;
 	}
 	a {
+		width: 100%;
 		background-color: #ddd;
+		text-align: center;
 		display:inline-block;
 		padding: 10px 0.5em;
 		border: 1px solid @white;
@@ -1668,5 +1674,14 @@ textarea {
 		margin-bottom:20px;
 		display: inline-block;
 		float: left;
+	}
+}
+
+// Practice Area display results
+.tm-latest-updates li {
+	line-height: 1;
+	padding-bottom: 1em;
+	&:last-child {
+		padding-bottom: 0;
 	}
 }
